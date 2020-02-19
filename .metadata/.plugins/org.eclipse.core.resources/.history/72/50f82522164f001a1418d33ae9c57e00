@@ -1,0 +1,13 @@
+package com.ekincare.seleniumgrid;
+
+import org.openqa.selenium.WebDriver;
+
+/**
+ * Hello world!
+ *
+ */
+public class BaseTest 
+{
+   
+	static WebDriver driver;
+}

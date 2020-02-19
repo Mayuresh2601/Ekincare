@@ -1,0 +1,11 @@
+package com.ekincare.androidautomation;
+
+import org.openqa.selenium.WebDriver;
+
+import com.ekincare.androidautomation.utility.Utility;
+
+public class BaseTest {
+	
+	protected static WebDriver driver;
+    
+}

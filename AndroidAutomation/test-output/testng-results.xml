@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="196707" started-at="2020-02-18T17:46:35 IST" finished-at="2020-02-18T17:49:51 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="196707" started-at="2020-02-18T17:46:35 IST" finished-at="2020-02-18T17:49:51 IST">
+      <class name="com.ekincare.androidautomation.OnePlusAppTest">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="beginTest" is-config="true" duration-ms="10870" started-at="2020-02-18T17:46:35 IST" finished-at="2020-02-18T17:46:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="healthCheckup()[pri:0, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="healthCheckup" duration-ms="41086" started-at="2020-02-18T17:46:45 IST" finished-at="2020-02-18T17:47:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- healthCheckup -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="beginTest" is-config="true" duration-ms="11464" started-at="2020-02-18T17:47:27 IST" finished-at="2020-02-18T17:47:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="gymAndFitness()[pri:1, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="gymAndFitness" duration-ms="31098" started-at="2020-02-18T17:47:38 IST" finished-at="2020-02-18T17:48:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gymAndFitness -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="beginTest" is-config="true" duration-ms="10529" started-at="2020-02-18T17:48:09 IST" finished-at="2020-02-18T17:48:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="orderMedicinesWithoutAddress()[pri:2, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="orderMedicinesWithoutAddress" duration-ms="52762" started-at="2020-02-18T17:48:20 IST" finished-at="2020-02-18T17:49:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderMedicinesWithoutAddress -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="beginTest" is-config="true" duration-ms="11516" started-at="2020-02-18T17:49:12 IST" finished-at="2020-02-18T17:49:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="orderMedicinesFromGallery()[pri:3, instance:com.ekincare.androidautomation.OnePlusAppTest@2353b3e6]" name="orderMedicinesFromGallery" duration-ms="27339" started-at="2020-02-18T17:49:24 IST" finished-at="2020-02-18T17:49:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderMedicinesFromGallery -->
+      </class> <!-- com.ekincare.androidautomation.OnePlusAppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
