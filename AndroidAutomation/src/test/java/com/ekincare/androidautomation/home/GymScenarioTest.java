@@ -1,4 +1,4 @@
-package com.ekincare.androidautomation;
+package com.ekincare.androidautomation.home;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -7,9 +7,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.ekincare.androidautomation.utility.Utility;
+import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -18,9 +20,8 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
+@Listeners(CustomListner.class)
 public class GymScenarioTest extends BaseTest{
-	
-	Utility utility = new Utility();
 
 	@BeforeMethod
 	public void beginTest() {
@@ -52,7 +53,7 @@ public class GymScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "rawtypes", "static-access" })
-	@Test(priority = 1)
+	@Test(priority = 0)
 	public void gymAndFitness() {
 		
 		System.out.println("Inside Gym and Fitness Scenario Test");

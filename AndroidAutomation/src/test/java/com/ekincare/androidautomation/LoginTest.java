@@ -7,14 +7,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.ekincare.androidautomation.utility.CustomListner;
 import com.ekincare.androidautomation.utility.Utility;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
+@Listeners(CustomListner.class)
 public class LoginTest extends BaseTest{
 	
 	Utility utility = new Utility();
@@ -87,6 +90,7 @@ public class LoginTest extends BaseTest{
 	}
 	
 	
+	@SuppressWarnings("static-access")
 	@Test(priority = 0)
 	public void validUsernameInvalidPasswordTest() {
 		

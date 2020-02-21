@@ -1,4 +1,4 @@
-package com.ekincare.androidautomation;
+package com.ekincare.androidautomation.home;
 
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -8,8 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 import com.ekincare.androidautomation.utility.Utility;
 
 import io.appium.java_client.AppiumDriver;
@@ -19,6 +22,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
+@Listeners(CustomListner.class)
 public class OrderMedicinesScenarioTest extends BaseTest{
 	
 	Utility utility = new Utility();

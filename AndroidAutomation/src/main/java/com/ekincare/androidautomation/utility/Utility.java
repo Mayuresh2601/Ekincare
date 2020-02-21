@@ -2,7 +2,7 @@ package com.ekincare.androidautomation.utility;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.Date;import org.apache.catalina.User;
+import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
