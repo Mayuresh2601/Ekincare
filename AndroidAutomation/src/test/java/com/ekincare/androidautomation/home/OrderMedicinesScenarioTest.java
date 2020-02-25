@@ -57,7 +57,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 17)
+	@Test(priority = 17)
 	public void fromGalleryWithoutAddress() {
 		
 		System.out.println("Inside Order Medicines from gallery images without Address Scenario Test");
@@ -131,7 +131,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 18)
+	@Test(priority = 18)
 	public void fromGalleryWithAddress() {
 		
 		System.out.println("Inside Order Medicines from gallery images with Address Scenario Test");
@@ -195,7 +195,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 6)
+	@Test(priority = 6)
 	public void pastUploadedWithoutAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded without specifying Address Scenario for Self Test");
@@ -271,7 +271,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void pastUploadedWithAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with specifying Address Scenario for Self Test");
@@ -334,7 +334,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void pastUploadedChangeAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with changed Address Scenario for Self Test");
@@ -416,7 +416,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("static-access")
-//	@Test(priority = 9)
+	@Test(priority = 9)
 	public void pastUploadedDeleteAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded delete Address Scenario for Self Test");
@@ -477,7 +477,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 10)
+	@Test(priority = 10)
 	public void pastUploadedWithoutAddressFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded without specifying Address Scenario for Family Member Test");
@@ -553,7 +553,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 11)
+	@Test(priority = 11)
 	public void pastUploadedWithAddressFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with specifying Address Scenario for Family Member Test");
@@ -616,7 +616,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 12)
+	@Test(priority = 12)
 	public void pastUploadedChangeAddressFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with changed Address Scenario for Family Member Test");
@@ -698,7 +698,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("static-access")
-//	@Test(priority = 13)
+	@Test(priority = 13)
 	public void pastUploadedDeleteAddressFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded delete Address Scenario for Family Member Test");
@@ -759,7 +759,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 14)
+	@Test(priority = 14)
 	public void pastUploadedWithoutAddressSelfPlusFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded without specifying Address Scenario for Self plus Family Member Test");
@@ -837,7 +837,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 15)
+	@Test(priority = 15)
 	public void pastUploadedWithAddressSelfPlusFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with specifying Address Scenario for Self Plus Family Member Test");
@@ -902,7 +902,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("static-access")
-//	@Test(priority = 16)
+	@Test(priority = 16)
 	public void pastUploadedDeleteAddressSelfPlusFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded delete Address Scenario for Self Plus Family Member Test");
@@ -965,7 +965,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void medicineNameWithoutAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name without address Scenario for Self Test");
@@ -1038,7 +1038,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void medicineNameWithAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name with Address Scenario for Self Test");
@@ -1100,7 +1100,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void medicineNameChangeAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name with change Address Scenario for Self Test");
@@ -1181,7 +1181,7 @@ public class OrderMedicinesScenarioTest extends BaseTest{
 		}
 	}
 	
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	public void medicineNameDeleteAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name delete Address Scenario for Self Test");

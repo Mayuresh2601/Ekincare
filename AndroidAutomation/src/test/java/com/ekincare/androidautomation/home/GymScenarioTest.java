@@ -1,5 +1,6 @@
 package com.ekincare.androidautomation.home;
 
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -11,6 +12,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.pages.HomePage;
 import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.AppiumDriver;
@@ -22,34 +24,27 @@ import io.appium.java_client.touch.offset.PointOption;
 
 @Listeners(CustomListner.class)
 public class GymScenarioTest extends BaseTest{
+	
 
 	@BeforeMethod
-	public void beginTest() {
-		
-		try {
+	public void beginTest() throws MalformedURLException {
 
-			DesiredCapabilities caps = new DesiredCapabilities();
+		DesiredCapabilities caps = new DesiredCapabilities();
 
-			caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
-			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+		caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
 
-			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "OnePlus 6T");
-			caps.setCapability(MobileCapabilityType.UDID, "6d2a00fc");
+		caps.setCapability(MobileCapabilityType.DEVICE_NAME, "OnePlus 6T");
+		caps.setCapability(MobileCapabilityType.UDID, "6d2a00fc");
 
-			caps.setCapability("appPackage", "com.ekincare.development");
-			caps.setCapability("appActivity", "com.ekincare.SplashScreenActivity");
-			
-			URL url = new URL("http://127.0.0.1:4723/wd/hub");
+		caps.setCapability("appPackage", "com.ekincare.development");
+		caps.setCapability("appActivity", "com.ekincare.SplashScreenActivity");
 
-			driver = new AppiumDriver<MobileElement>(url, caps);
-			
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 
-		} catch (Exception e) {
-			System.out.println("Cause is: " + e.getCause());
-			System.out.println("Message is: " + e.getMessage());
-			e.printStackTrace();
-		}
+		driver = new AppiumDriver<MobileElement>(url, caps);
+
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 	}
 	
 	@SuppressWarnings({ "rawtypes", "static-access" })

@@ -264,7 +264,6 @@ public class FamilyMembers extends BaseTest{
 			Thread.sleep(4000);
 			driver.quit();
 		} catch (Exception e) {
-			
 			System.out.println("Causen is: "+e.getCause());
 			System.out.println("Message is: "+e.getMessage());
 			e.printStackTrace();
