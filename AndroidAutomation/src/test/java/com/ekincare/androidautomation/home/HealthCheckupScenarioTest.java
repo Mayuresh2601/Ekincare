@@ -89,7 +89,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 			healthCheckup.click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RadioButton")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout[2]/android.widget.ToggleButton")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/continue_packages")).click();
 			Thread.sleep(1000);
@@ -124,9 +124,9 @@ public class HealthCheckupScenarioTest extends BaseTest{
 		}
 	}
 	
-	
-	@SuppressWarnings({ "rawtypes", "static-access" })
-	@Test(priority = 1)
+
+	@SuppressWarnings("rawtypes")
+//	@Test(priority = 1)
 	public void healthCheckupFamilyMember() {
 		
 		System.out.println("Inside Health Checkup for Family member Scenario Test");
@@ -208,7 +208,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void annualhealthCheckupSelf() {
 		
 		System.out.println("Inside Annual Health Checkup for Self Scenario Test");
@@ -292,7 +292,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 	
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void annualhealthCheckupFamilyMember() {
 		
 		System.out.println("Inside Annual Health Checkup for Family member Scenario Test");
@@ -379,7 +379,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 4)
+//	@Test(priority = 4)
 	public void annualhealthCheckupSelfPlusFamilyMember() {
 		
 		System.out.println("Inside Annual Health Checkup for Self plus Family Member Scenario Test");

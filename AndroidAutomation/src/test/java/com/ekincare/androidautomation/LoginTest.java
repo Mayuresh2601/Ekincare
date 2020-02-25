@@ -11,7 +11,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.utility.CustomListner;
-import com.ekincare.androidautomation.utility.Utility;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -19,8 +18,6 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 @Listeners(CustomListner.class)
 public class LoginTest extends BaseTest{
-	
-	Utility utility = new Utility();
 	
 	@BeforeMethod
 	public void beginTest() {

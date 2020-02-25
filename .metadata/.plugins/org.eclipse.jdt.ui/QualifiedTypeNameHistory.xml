@@ -35,8 +35,6 @@
 <fullyQualifiedTypeName name="io.appium.java_client.AppiumDriver"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileElement"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
@@ -48,9 +46,18 @@
 <fullyQualifiedTypeName name="net.sourceforge.tess4j.ITesseract"/>
 <fullyQualifiedTypeName name="net.sourceforge.tess4j.Tesseract"/>
 <fullyQualifiedTypeName name="net.sourceforge.tess4j.util.LoadLibs"/>
-<fullyQualifiedTypeName name="com.ekincare.androidautomation.utility.Utility"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.apache.catalina.User"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.configuration.IReporterConfiguration"/>
+<fullyQualifiedTypeName name="com.relevantcodes.extentreports.IReporter"/>
+<fullyQualifiedTypeName name="org.apache.commons.math3.stat.inference.TestUtils"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Listeners"/>
+<fullyQualifiedTypeName name="com.ekincare.androidautomation.utility.CustomListner"/>
+<fullyQualifiedTypeName name="com.ekincare.androidautomation.utility.Utility"/>
+<fullyQualifiedTypeName name="java.awt.Robot"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="com.ekincare.androidautomation.BaseTest"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
 </qualifiedTypeNameHistroy>

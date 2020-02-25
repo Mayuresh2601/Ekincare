@@ -50,7 +50,7 @@ public class FamilyMembers extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public void addFamilyMember() {
 		
 		System.out.println("Inside Family Members Scenario Test");
@@ -90,11 +90,11 @@ public class FamilyMembers extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/add_family")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.GridView/android.widget.FrameLayout[1]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.GridView/android.widget.FrameLayout[4]")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/robotoTextView5")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("Arun");
+			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("Avinash");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
@@ -102,20 +102,20 @@ public class FamilyMembers extends BaseTest{
 			Thread.sleep(1000);
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).sendKeys("1968");
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).sendKeys("1995");
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).sendKeys("12");
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).sendKeys("6");
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).sendKeys("Dec");
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).sendKeys("Jan");
 			Thread.sleep(1000);
 			driver.findElement(By.id("android:id/button1")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("9845723098");
+			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("9845694698");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
@@ -129,8 +129,9 @@ public class FamilyMembers extends BaseTest{
 		}
 	}
 
-	@Test(priority = 1)
+	
 	@SuppressWarnings("rawtypes")
+	@Test(priority = 1)
 	public void familyMemberHRA() {
 		
 		System.out.println("Inside Family Members Complete HRA Scenario Test");
@@ -167,26 +168,26 @@ public class FamilyMembers extends BaseTest{
 			
 			driver.findElement(By.id("com.ekincare.development:id/dashboard_family_layout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/hra_pending_view")).click();
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(91, 465))
-			.moveTo(PointOption.point(1014, 465))
+			action1.press(PointOption.point(650, 480))
+			.moveTo(PointOption.point(360, 480))
 			.release()
 			.perform();
 			
 			TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
-			action2.press(PointOption.point(91, 766))
-			.moveTo(PointOption.point(1014, 766))
+			action2.press(PointOption.point(650, 766))
+			.moveTo(PointOption.point(810, 766))
 			.release()
 			.perform();
 			
 			TouchAction action3 = new TouchAction((PerformsTouchActions) driver);
-			action3.press(PointOption.point(91, 2133))
-			.moveTo(PointOption.point(1014, 2133))
+			action3.press(PointOption.point(650, 1070))
+			.moveTo(PointOption.point(710, 1070))
 			.release()
 			.perform();
 			
@@ -244,9 +245,8 @@ public class FamilyMembers extends BaseTest{
 			
 			driver.findElement(By.id("com.ekincare.development:id/skip_bp")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/wizard_next_layout")).click();
+			driver.findElement(By.id("com.ekincare.development:id/score_close")).click();
 			Thread.sleep(1000);
-			
 			
 		} catch (Exception e) {
 			
@@ -270,5 +270,4 @@ public class FamilyMembers extends BaseTest{
 			e.printStackTrace();
 		}
 	}
-
 }
