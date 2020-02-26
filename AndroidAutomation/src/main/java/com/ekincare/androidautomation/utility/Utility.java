@@ -1,17 +1,24 @@
 package com.ekincare.androidautomation.utility;
 
 import java.io.File;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.ekincare.androidautomation.BaseTest;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;
@@ -98,4 +105,45 @@ public class Utility extends BaseTest{
 		return result;
 	}
 
+	public static void init_Driver() {
+		
+		try {
+
+			DesiredCapabilities caps = new DesiredCapabilities();
+
+			caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
+			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
+
+			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "OnePlus 6T");
+			caps.setCapability(MobileCapabilityType.UDID, "6d2a00fc");
+
+			caps.setCapability("appPackage", "com.ekincare.development");
+			caps.setCapability("appActivity", "com.ekincare.SplashScreenActivity");
+			
+			URL url = new URL("http://127.0.0.1:4723/wd/hub");
+
+			driver = new AppiumDriver<MobileElement>(url, caps);
+			
+			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
+		} catch (Exception e) {
+			System.out.println("Cause is: " + e.getCause());
+			System.out.println("Message is: " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
+	public static void quit_Driver() {
+		
+		try {
+			
+			Thread.sleep(4000);
+			driver.quit();
+		} catch (Exception e) {
+			
+			System.out.println("Causen is: "+e.getCause());
+			System.out.println("Message is: "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
 }

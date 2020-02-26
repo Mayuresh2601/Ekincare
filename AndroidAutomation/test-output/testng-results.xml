@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58924" started-at="2020-02-25T12:52:04Z" finished-at="2020-02-25T12:53:03Z">
+  <suite name="Default suite" duration-ms="57649" started-at="2020-02-26T12:35:58Z" finished-at="2020-02-26T12:36:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58924" started-at="2020-02-25T12:52:04Z" finished-at="2020-02-25T12:53:03Z">
-      <class name="com.ekincare.androidautomation.home.TalkWithFamilyDoctorTest">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.home.TalkWithFamilyDoctorTest@35d176f7]" name="beginTest" is-config="true" duration-ms="9662" started-at="2020-02-25T12:52:04Z" finished-at="2020-02-25T12:52:14Z">
+    <test name="Default test" duration-ms="57649" started-at="2020-02-26T12:35:58Z" finished-at="2020-02-26T12:36:55Z">
+      <class name="com.ekincare.androidautomation.profile.FamilyMembers">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.profile.FamilyMembers@5c5a1b69]" name="beginTest" is-config="true" duration-ms="8272" started-at="2020-02-26T12:35:58Z" finished-at="2020-02-26T12:36:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="BookAppointmentWithFamilyMember()[pri:6, instance:com.ekincare.androidautomation.home.TalkWithFamilyDoctorTest@35d176f7]" name="BookAppointmentWithFamilyMember" duration-ms="44778" started-at="2020-02-25T12:52:14Z" finished-at="2020-02-25T12:52:59Z">
+        <test-method status="PASS" signature="addFamilyMember()[pri:0, instance:com.ekincare.androidautomation.profile.FamilyMembers@5c5a1b69]" name="addFamilyMember" duration-ms="44878" started-at="2020-02-26T12:36:06Z" finished-at="2020-02-26T12:36:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookAppointmentWithFamilyMember -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.home.TalkWithFamilyDoctorTest@35d176f7]" name="endTest" is-config="true" duration-ms="4464" started-at="2020-02-25T12:52:59Z" finished-at="2020-02-25T12:53:03Z">
+        </test-method> <!-- addFamilyMember -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.profile.FamilyMembers@5c5a1b69]" name="endTest" is-config="true" duration-ms="4475" started-at="2020-02-26T12:36:51Z" finished-at="2020-02-26T12:36:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.home.TalkWithFamilyDoctorTest -->
+      </class> <!-- com.ekincare.androidautomation.profile.FamilyMembers -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,56 +1,28 @@
 package com.ekincare.androidautomation.profile;
 
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
-import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 
 
 public class FamilyMembers extends BaseTest{
 	
+	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void beginTest() {
 		
-		try {
-
-			DesiredCapabilities caps = new DesiredCapabilities();
-
-			caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "android");
-			caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10");
-
-			caps.setCapability(MobileCapabilityType.DEVICE_NAME, "OnePlus 6T");
-			caps.setCapability(MobileCapabilityType.UDID, "6d2a00fc");
-
-			caps.setCapability("appPackage", "com.ekincare.development");
-			caps.setCapability("appActivity", "com.ekincare.SplashScreenActivity");
-			
-			URL url = new URL("http://127.0.0.1:4723/wd/hub");
-
-			driver = new AppiumDriver<MobileElement>(url, caps);
-			
-			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-
-		} catch (Exception e) {
-			System.out.println("Cause is: " + e.getCause());
-			System.out.println("Message is: " + e.getMessage());
-			e.printStackTrace();
-		}
+		utility.init_Driver();
 	}
 	
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void addFamilyMember() {
 		
 		System.out.println("Inside Family Members Scenario Test");
@@ -77,9 +49,9 @@ public class FamilyMembers extends BaseTest{
 			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
 			nextBTN.click();
 			Thread.sleep(1000);
-			MobileElement dismiss = driver.findElement(By.id("com.ekincare.development:id/tv_dismiss"));
-			dismiss.click();
-			Thread.sleep(1000);
+//			MobileElement dismiss = driver.findElement(By.id("com.ekincare.development:id/tv_dismiss"));
+//			dismiss.click();
+//			Thread.sleep(1000);
 			
 			MobileElement profileBtn = driver.findElement(By.id("com.ekincare.development:id/profile_imageview"));
 			profileBtn.click();
@@ -102,16 +74,17 @@ public class FamilyMembers extends BaseTest{
 			Thread.sleep(1000);
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).sendKeys("1995");
-			Thread.sleep(1000);
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).sendKeys("1997");
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).sendKeys("6");
-			Thread.sleep(1000);
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).sendKeys("04");
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).sendKeys("Jan");
-			Thread.sleep(1000);
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).sendKeys("Dec");
+			Thread.sleep(2000);
 			driver.findElement(By.id("android:id/button1")).click();
 			Thread.sleep(1000);
+			
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
 			
@@ -131,7 +104,7 @@ public class FamilyMembers extends BaseTest{
 
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void familyMemberHRA() {
 		
 		System.out.println("Inside Family Members Complete HRA Scenario Test");
@@ -257,16 +230,10 @@ public class FamilyMembers extends BaseTest{
 	}
 	
 	
+	@SuppressWarnings("static-access")
 	@AfterMethod
 	public void endTest() {
-		try {
-			
-			Thread.sleep(4000);
-			driver.quit();
-		} catch (Exception e) {
-			System.out.println("Causen is: "+e.getCause());
-			System.out.println("Message is: "+e.getMessage());
-			e.printStackTrace();
-		}
+		
+		utility.quit_Driver();
 	}
 }

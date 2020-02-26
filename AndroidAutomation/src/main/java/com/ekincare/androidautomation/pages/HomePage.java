@@ -81,5 +81,4 @@ public class HomePage extends BaseTest{
 		action.press(PointOption.point(91, 2133)).moveTo(PointOption.point(1014, 2133)).release().perform();
 
 	}
-
 }
