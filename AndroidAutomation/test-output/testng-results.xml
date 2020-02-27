@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57649" started-at="2020-02-26T12:35:58Z" finished-at="2020-02-26T12:36:55Z">
+  <suite name="Default suite" duration-ms="91413" started-at="2020-02-27T13:19:04Z" finished-at="2020-02-27T13:20:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57649" started-at="2020-02-26T12:35:58Z" finished-at="2020-02-26T12:36:55Z">
-      <class name="com.ekincare.androidautomation.profile.FamilyMembers">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.profile.FamilyMembers@5c5a1b69]" name="beginTest" is-config="true" duration-ms="8272" started-at="2020-02-26T12:35:58Z" finished-at="2020-02-26T12:36:06Z">
+    <test name="Default test" duration-ms="91413" started-at="2020-02-27T13:19:04Z" finished-at="2020-02-27T13:20:35Z">
+      <class name="com.ekincare.androidautomation.home.OrderMedicinesScenarioTest">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.home.OrderMedicinesScenarioTest@3701eaf6]" name="beginTest" is-config="true" duration-ms="7180" started-at="2020-02-27T13:19:04Z" finished-at="2020-02-27T13:19:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="addFamilyMember()[pri:0, instance:com.ekincare.androidautomation.profile.FamilyMembers@5c5a1b69]" name="addFamilyMember" duration-ms="44878" started-at="2020-02-26T12:36:06Z" finished-at="2020-02-26T12:36:51Z">
+        <test-method status="PASS" signature="pastUploadedDeleteAddressFamily()[pri:11, instance:com.ekincare.androidautomation.home.OrderMedicinesScenarioTest@3701eaf6]" name="pastUploadedDeleteAddressFamily" duration-ms="79694" started-at="2020-02-27T13:19:11Z" finished-at="2020-02-27T13:20:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addFamilyMember -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.profile.FamilyMembers@5c5a1b69]" name="endTest" is-config="true" duration-ms="4475" started-at="2020-02-26T12:36:51Z" finished-at="2020-02-26T12:36:55Z">
+        </test-method> <!-- pastUploadedDeleteAddressFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.home.OrderMedicinesScenarioTest@3701eaf6]" name="endTest" is-config="true" duration-ms="4514" started-at="2020-02-27T13:20:31Z" finished-at="2020-02-27T13:20:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.profile.FamilyMembers -->
+      </class> <!-- com.ekincare.androidautomation.home.OrderMedicinesScenarioTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

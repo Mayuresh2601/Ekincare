@@ -1,5 +1,7 @@
 package com.ekincare.androidautomation;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -36,7 +38,7 @@ public class LoginTest extends BaseTest{
 			corporateEmp.click();
 			Thread.sleep(1000);
 			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("ashwini@ekincare.com");
+			email.sendKeys("testfeb24920@yopmail.com");
 			Thread.sleep(1000);
 			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
 			nextBtn.click();
@@ -50,6 +52,10 @@ public class LoginTest extends BaseTest{
 			Thread.sleep(1000);
 			MobileElement dismiss = driver.findElement(By.id("com.ekincare.development:id/tv_dismiss"));
 			dismiss.click();
+			
+			String actualResult = driver.currentActivity();
+			String expectedResult = "com.oneclick.ekincare.MainActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			System.out.println("Cause  is: " + e.getCause());
@@ -74,7 +80,7 @@ public class LoginTest extends BaseTest{
 			corporateEmp.click();
 			Thread.sleep(1000);
 			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("ashwini@ekincare.com");
+			email.sendKeys("testfeb24920@yopmail.com");
 			Thread.sleep(1000);
 			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
 			nextBtn.click();

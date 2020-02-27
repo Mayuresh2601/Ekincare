@@ -1,5 +1,9 @@
 package com.ekincare.androidautomation.profile;
 
+import static org.testng.Assert.assertEquals;
+
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,36 +26,13 @@ public class FamilyMembers extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public void addFamilyMember() {
 		
-		System.out.println("Inside Family Members Scenario Test");
+		System.out.println("Inside Add Family Members Scenario Test");
 		try {
 			
-			Thread.sleep(2000);
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("ashwini@ekincare.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
-//			MobileElement dismiss = driver.findElement(By.id("com.ekincare.development:id/tv_dismiss"));
-//			dismiss.click();
-//			Thread.sleep(1000);
+			login.validLoginCredentials();
 			
 			MobileElement profileBtn = driver.findElement(By.id("com.ekincare.development:id/profile_imageview"));
 			profileBtn.click();
@@ -62,37 +43,44 @@ public class FamilyMembers extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/add_family")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.GridView/android.widget.FrameLayout[4]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.GridView/android.widget.FrameLayout[2]")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/robotoTextView5")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("Avinash");
+			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("Shreeraksha");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[3]/android.widget.EditText")).sendKeys("1997");
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[2]/android.widget.EditText")).sendKeys("04");
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).clear();
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.NumberPicker[1]/android.widget.EditText")).sendKeys("Dec");
-			Thread.sleep(2000);
+			List<MobileElement> date = driver.findElements(By.id("android:id/numberpicker_input"));
+			date.get(0).click();
+			date.get(0).sendKeys("Nov");
+			date.get(0).sendKeys("Nov");
+			
+			date.get(1).click();
+			date.get(1).sendKeys("11");
+			date.get(1).sendKeys("11");
+			
+			date.get(2).click();
+			date.get(2).sendKeys("1996");
+			date.get(2).sendKeys("1996");
+			
 			driver.findElement(By.id("android:id/button1")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("9845694698");
+			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("1239314567");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
 			
+			String actualResult = driver.currentActivity();
+			String expectedResult = "com.ekincare.loginregistration.addfamilymember.FamilyMemberAddSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -104,36 +92,13 @@ public class FamilyMembers extends BaseTest{
 
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void familyMemberHRA() {
 		
 		System.out.println("Inside Family Members Complete HRA Scenario Test");
 		try {
 			
-			Thread.sleep(2000);
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("ashwini@ekincare.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
-			MobileElement dismiss = driver.findElement(By.id("com.ekincare.development:id/tv_dismiss"));
-			dismiss.click();
-			Thread.sleep(1000);
+			login.validLoginCredentials();
 			
 			MobileElement profileBtn = driver.findElement(By.id("com.ekincare.development:id/profile_imageview"));
 			profileBtn.click();
@@ -218,8 +183,10 @@ public class FamilyMembers extends BaseTest{
 			
 			driver.findElement(By.id("com.ekincare.development:id/skip_bp")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/score_close")).click();
-			Thread.sleep(1000);
+			
+			String actualResult = driver.currentActivity();
+			String expectedResult = "com.ekincare.ui.hra.HraFinalActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			

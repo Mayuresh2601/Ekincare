@@ -1,5 +1,7 @@
 package com.ekincare.androidautomation.home;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -7,7 +9,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
-import com.ekincare.androidautomation.LoginTest;
 import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
@@ -17,9 +18,8 @@ import io.appium.java_client.touch.offset.PointOption;
 
 @Listeners(CustomListner.class)
 public class GymScenarioTest extends BaseTest{
-	
-	LoginTest login = new LoginTest();
 
+	
 	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void beginTest() {
@@ -35,7 +35,7 @@ public class GymScenarioTest extends BaseTest{
 		System.out.println("Inside Gym and Fitness Scenario Test");
 		try {
 			
-			login.validUsernameValidPasswordTest();
+			login.validLoginCredentials();
 		
 			MobileElement gym  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			gym.click();
@@ -55,9 +55,12 @@ public class GymScenarioTest extends BaseTest{
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
 			Thread.sleep(3000);
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.gym.GymSessionStausActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			

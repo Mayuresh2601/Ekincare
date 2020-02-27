@@ -1,5 +1,7 @@
 package com.ekincare.androidautomation.home;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -7,7 +9,6 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
-import com.ekincare.androidautomation.LoginTest;
 import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
@@ -16,9 +17,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 
 @Listeners(CustomListner.class)
-public class HealthCheckupScenarioTest extends BaseTest{
-
-	LoginTest login = new LoginTest();
+public class HealthCheckupScenarioTest extends BaseTest {
 	
 	@SuppressWarnings("static-access")
 	@BeforeMethod
@@ -34,13 +33,13 @@ public class HealthCheckupScenarioTest extends BaseTest{
 		System.out.println("Inside Health Checkup for Self Scenario Test");
 		try {
 			
-			login.validUsernameValidPasswordTest();
+			login.validLoginCredentials();
 			
 			MobileElement healthCheckup = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]"));
 			healthCheckup.click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout[2]/android.widget.ToggleButton")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.RadioButton")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/continue_packages")).click();
 			Thread.sleep(1000);
@@ -64,8 +63,12 @@ public class HealthCheckupScenarioTest extends BaseTest{
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
+			Thread.sleep(2000);
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.ui.bookpackage.BookPaymentSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -83,21 +86,20 @@ public class HealthCheckupScenarioTest extends BaseTest{
 		System.out.println("Inside Health Checkup for Family member Scenario Test");
 		try {
 			
-			login.validUsernameValidPasswordTest();
+			login.validLoginCredentials();
 			
 			MobileElement healthCheckup = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]"));
 			healthCheckup.click();
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(572, 1852))
-			.moveTo(PointOption.point(572, 600))
-			.release()
+			action1.press(PointOption.point(855, 2075))
+			.moveTo(PointOption.point(855, 1000))
 			.perform();
+			Thread.sleep(2000);
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.ToggleButton")).click();
 			Thread.sleep(1000);
-
 			driver.findElement(By.id("com.ekincare.development:id/select_package_checkbox")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/continue_book_appointment")).click();
@@ -124,8 +126,12 @@ public class HealthCheckupScenarioTest extends BaseTest{
 			TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
 			action2.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
+			Thread.sleep(2000);
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.ui.bookpackage.BookPaymentSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -142,7 +148,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 		System.out.println("Inside Annual Health Checkup for Self Scenario Test");
 		try {
 			
-			login.validUsernameValidPasswordTest();
+			login.validLoginCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -184,8 +190,12 @@ public class HealthCheckupScenarioTest extends BaseTest{
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
+			Thread.sleep(2000);
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.ui.bookpackage.v2.HealthCheckPaymentSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -203,7 +213,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 		System.out.println("Inside Annual Health Checkup for Family member Scenario Test");
 		try {
 			
-			login.validUsernameValidPasswordTest();
+			login.validLoginCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -219,7 +229,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 			Thread.sleep(1000);
 			driver.findElement(By.id("android:id/text1")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[4]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[1]")).click();
 			Thread.sleep(1000);		
 			driver.findElement(By.id("com.ekincare.development:id/continue_order")).click();
 			Thread.sleep(1000);
@@ -249,8 +259,12 @@ public class HealthCheckupScenarioTest extends BaseTest{
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
+			Thread.sleep(2000);
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.ui.bookpackage.v2.HealthCheckPaymentSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -267,7 +281,7 @@ public class HealthCheckupScenarioTest extends BaseTest{
 		System.out.println("Inside Annual Health Checkup for Self plus Family Member Scenario Test");
 		try {
 			
-			login.validUsernameValidPasswordTest();
+			login.validLoginCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -311,8 +325,12 @@ public class HealthCheckupScenarioTest extends BaseTest{
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
+			Thread.sleep(2000);
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.ui.bookpackage.v2.HealthCheckPaymentSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			

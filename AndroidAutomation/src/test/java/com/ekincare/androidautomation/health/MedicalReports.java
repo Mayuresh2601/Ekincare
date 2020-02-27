@@ -1,5 +1,7 @@
 package com.ekincare.androidautomation.health;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,6 +13,7 @@ import io.appium.java_client.MobileElement;
 
 public class MedicalReports extends BaseTest{
 	
+	
 	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void beginTest() {
@@ -18,34 +21,13 @@ public class MedicalReports extends BaseTest{
 		utility.init_Driver();
 	}
 	
-//	@Test(priority = 0)
-	public void uploadMedicalReport() {
+	@Test(priority = 0)
+	public void viewMedicalReport() {
 		
 		System.out.println("Inside Medical Report to Upload and view Report");
 		try {
 			
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("m16test@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/terms_condition_check")).click();
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.validLoginCredentials();
 			
 			MobileElement health = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"PROFILE\"]"));
 			health.click();
@@ -76,6 +58,10 @@ public class MedicalReports extends BaseTest{
 			
 			driver.findElement(By.id("com.ekincare.development:id/document_layout")).click();
 			Thread.sleep(1000);
+			
+			String actualResult = driver.currentActivity();
+			String expectedResult = "com.oneclick.ekincare.DocumentViewActivity";
+			assertEquals(actualResult, expectedResult);
 
 		} catch (Exception e) {
 
@@ -88,31 +74,10 @@ public class MedicalReports extends BaseTest{
 	@Test(priority = 1)
 	public void deleteMedicalReport() {
 		
-		System.out.println("Inside Medical Report to Delete Report");
+		System.out.println("Inside Medical Report to Upload and Delete Report");
 		try {
 			
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("m16test@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/terms_condition_check")).click();
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.validLoginCredentials();
 			
 			MobileElement health = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"PROFILE\"]"));
 			health.click();
@@ -137,6 +102,10 @@ public class MedicalReports extends BaseTest{
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
+			
+			String actualResult = driver.currentActivity();
+			String expectedResult = "com.ekincare.health.medicalRecord.MedicalRecordActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 

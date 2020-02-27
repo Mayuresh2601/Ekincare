@@ -14,10 +14,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.ekincare.androidautomation.BaseTest;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
 import net.sourceforge.tess4j.ITesseract;
@@ -122,7 +122,7 @@ public class Utility extends BaseTest{
 			
 			URL url = new URL("http://127.0.0.1:4723/wd/hub");
 
-			driver = new AppiumDriver<MobileElement>(url, caps);
+			driver = new AndroidDriver<MobileElement>(url, caps);
 			
 			driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 
