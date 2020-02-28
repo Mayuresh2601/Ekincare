@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +102,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ekincare.androidautomation.benefits.TalkWithDoctorTest" hash-for-method="talkWithDoctorFamily">talkWithDoctorFamily</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ekincare.androidautomation.health.MedicalReports" hash-for-method="deleteMedicalReport">deleteMedicalReport</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ekincare.androidautomation.benefits.TalkWithDoctorTest" hash-for-method="talkWithDoctorSelf">talkWithDoctorSelf</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ekincare.androidautomation.health.MedicalReports" hash-for-method="deleteMedicalReportFamily">deleteMedicalReportFamily</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ekincare.androidautomation.health.MedicalReports" hash-for-method="viewMedicalReport">viewMedicalReport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.ekincare.androidautomation.health.MedicalReports" hash-for-method="viewMedicalReportFamily">viewMedicalReportFamily</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -125,21 +135,35 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.ekincare.androidautomation.benefits.TalkWithDoctorTest</span>
+              <span class="class-name">com.ekincare.androidautomation.health.MedicalReports</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="talkWithDoctorFamily">
-                  </a> <!-- talkWithDoctorFamily -->
-                  <span class="method-name">talkWithDoctorFamily</span>
+                  <a name="deleteMedicalReport">
+                  </a> <!-- deleteMedicalReport -->
+                  <span class="method-name">deleteMedicalReport</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="talkWithDoctorSelf">
-                  </a> <!-- talkWithDoctorSelf -->
-                  <span class="method-name">talkWithDoctorSelf</span>
+                  <a name="deleteMedicalReportFamily">
+                  </a> <!-- deleteMedicalReportFamily -->
+                  <span class="method-name">deleteMedicalReportFamily</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewMedicalReport">
+                  </a> <!-- viewMedicalReport -->
+                  <span class="method-name">viewMedicalReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="viewMedicalReportFamily">
+                  </a> <!-- viewMedicalReportFamily -->
+                  <span class="method-name">viewMedicalReportFamily</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +171,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/tr/xv4ygb814hsgcxbl3l8s3fvc0000gn/T/testng-eclipse--1061235625/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/tr/xv4ygb814hsgcxbl3l8s3fvc0000gn/T/testng-eclipse--808060834/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -156,7 +180,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.ekincare.androidautomation.benefits.TalkWithDoctorTest&quot;/&gt;
+      &lt;class name=&quot;com.ekincare.androidautomation.health.MedicalReports&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -196,15 +220,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'talkWithDoctorFamily')
-data.setCell(0, 2, 'com.ekincare.androidautomation.benefits.TalkWithDoctorTest')
-data.setCell(0, 3, 39868);
+data.setCell(0, 1, 'viewMedicalReport')
+data.setCell(0, 2, 'com.ekincare.androidautomation.health.MedicalReports')
+data.setCell(0, 3, 41744);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'talkWithDoctorSelf')
-data.setCell(1, 2, 'com.ekincare.androidautomation.benefits.TalkWithDoctorTest')
-data.setCell(1, 3, 32375);
+data.setCell(1, 1, 'viewMedicalReportFamily')
+data.setCell(1, 2, 'com.ekincare.androidautomation.health.MedicalReports')
+data.setCell(1, 3, 31752);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deleteMedicalReportFamily')
+data.setCell(2, 2, 'com.ekincare.androidautomation.health.MedicalReports')
+data.setCell(2, 3, 22642);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deleteMedicalReport')
+data.setCell(3, 2, 'com.ekincare.androidautomation.health.MedicalReports')
+data.setCell(3, 3, 21290);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -235,30 +267,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.ekincare.androidautomation.benefits.TalkWithDoctorTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.ekincare.androidautomation.health.MedicalReports</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beginTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">talkWithDoctorSelf</span>
-                <span class="method-start">7860 ms</span>
+                <span class="method-name">viewMedicalReport</span>
+                <span class="method-start">8138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">40236 ms</span>
+                <span class="method-start">49884 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beginTest</span>
-                <span class="method-start">44725 ms</span>
+                <span class="method-start">54449 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">talkWithDoctorFamily</span>
-                <span class="method-start">52217 ms</span>
+                <span class="method-name">deleteMedicalReport</span>
+                <span class="method-start">62136 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest</span>
-                <span class="method-start">92087 ms</span>
+                <span class="method-start">83427 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beginTest</span>
+                <span class="method-start">87883 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">viewMedicalReportFamily</span>
+                <span class="method-start">95765 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">127518 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beginTest</span>
+                <span class="method-start">132087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteMedicalReportFamily</span>
+                <span class="method-start">139774 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">162417 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

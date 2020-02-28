@@ -193,21 +193,6 @@ public class FamilyMembers extends BaseTest{
 	}
 	
 	
-	public void medicalReportsForFamily() {
-		
-		System.out.println("Inside Medical Reports for Family Members");
-		
-		try {
-			
-		} catch (Exception e) {
-
-			System.out.println("Cause is: " + e.getCause());
-			System.out.println("Message is: " + e.getMessage());
-			e.printStackTrace();
-		}
-	}
-	
-	
 	@SuppressWarnings("static-access")
 	@AfterMethod
 	public void endTest() {
