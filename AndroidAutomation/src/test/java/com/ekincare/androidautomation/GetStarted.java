@@ -1,113 +1,64 @@
-package com.ekincare.androidautomation.profile;
+package com.ekincare.androidautomation;
 
 import static org.testng.Assert.assertEquals;
-
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class FamilyMembers extends BaseTest{
-	
+@Listeners(CustomListner.class)
+public class GetStarted extends BaseTest {
+
 	@SuppressWarnings("static-access")
 	@BeforeMethod
 	public void beginTest() {
-		
+
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 0)
-	public void addFamilyMember() {
-		
-		System.out.println("Inside Add Family Members Scenario Test");
-		try {
-			
-			login.talkWithFamilyCredentials();
-			
-			MobileElement profileBtn = driver.findElement(By.id("com.ekincare.development:id/profile_imageview"));
-			profileBtn.click();
-			Thread.sleep(1000);
-			
-			driver.findElement(By.id("com.ekincare.development:id/dashboard_family_layout")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/add_family")).click();
-			Thread.sleep(1000);
-			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.GridView/android.widget.FrameLayout[2]")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/robotoTextView5")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("Shreeraksha");
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).click();
-			Thread.sleep(1000);
-			
-			List<MobileElement> date = driver.findElements(By.id("android:id/numberpicker_input"));
-			date.get(0).click();
-			date.get(0).sendKeys("Nov");
-			date.get(0).sendKeys("Nov");
-			
-			date.get(1).click();
-			date.get(1).sendKeys("11");
-			date.get(1).sendKeys("11");
-			
-			date.get(2).click();
-			date.get(2).sendKeys("1996");
-			date.get(2).sendKeys("1996");
-			
-			driver.findElement(By.id("android:id/button1")).click();
-			Thread.sleep(1000);
-			
-			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
-			Thread.sleep(1000);
-			
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("1239314567");
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
-			Thread.sleep(1000);
-			
-			String actualResult = driver.currentActivity();
-			String expectedResult = "com.ekincare.loginregistration.addfamilymember.FamilyMemberAddSuccessActivity";
-			assertEquals(actualResult, expectedResult);
-			
-		} catch (Exception e) {
-			
-			System.out.println("Cause is: " + e.getCause());
-			System.out.println("Message is: " + e.getMessage());
-			e.printStackTrace();
-		}
-	}
-
 	
-	@SuppressWarnings("rawtypes")
-	@Test(priority = 1)
-	public void familyMemberHRA() {
+	@SuppressWarnings({ "rawtypes", "static-access" })
+//	@Test(priority = 0)
+	public void getStarted() {
 		
-		System.out.println("Inside Family Members Complete HRA Scenario Test");
+		System.out.println("Inside Get Started Scenario Test");
 		try {
 			
-			login.talkWithFamilyCredentials();
-			
-			MobileElement profileBtn = driver.findElement(By.id("com.ekincare.development:id/profile_imageview"));
-			profileBtn.click();
+			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
+			skip.click();
+			Thread.sleep(1000);
+			driver.findElement(By.id("com.ekincare.development:id/get_started_Button")).click();
+			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
+			corporateEmp.click();
+			Thread.sleep(1000);
+			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
+			email.sendKeys("testfeb24320@yopmail.com");
+			Thread.sleep(1000);
+			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
+			nextBtn.click();
+			Thread.sleep(1000);
+			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
+			password.sendKeys("ekincare123");
+			Thread.sleep(1000);
+			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
+			nextBTN.click();
+			Thread.sleep(1000);
+		
+			MobileElement getStarted  = driver.findElement(By.id("com.ekincare.development:id/card_dash_board_image"));
+			getStarted.click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.id("com.ekincare.development:id/dashboard_family_layout")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/hra_pending_view")).click();
+			MobileElement getStartedBtn  = driver.findElement(By.id("com.ekincare.development:id/button_text"));
+			getStartedBtn.click();
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
@@ -191,22 +142,6 @@ public class FamilyMembers extends BaseTest{
 			e.printStackTrace();
 		}
 	}
-	
-	
-	public void medicalReportsForFamily() {
-		
-		System.out.println("Inside Medical Reports for Family Members");
-		
-		try {
-			
-		} catch (Exception e) {
-
-			System.out.println("Cause is: " + e.getCause());
-			System.out.println("Message is: " + e.getMessage());
-			e.printStackTrace();
-		}
-	}
-	
 	
 	@SuppressWarnings("static-access")
 	@AfterMethod

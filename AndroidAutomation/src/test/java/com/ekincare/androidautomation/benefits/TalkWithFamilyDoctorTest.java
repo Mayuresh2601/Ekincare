@@ -1,9 +1,10 @@
-package com.ekincare.androidautomation.home;
+package com.ekincare.androidautomation.benefits;
+
+import static org.testng.Assert.assertEquals;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -31,31 +32,10 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	@Test(priority = 0)
 	public void aboutDoctor() {
 		
-		System.out.println("Inside Talk with Family Doctor");
+		System.out.println("Inside Talk with Family Doctor About Doctor");
 		try {
 
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("m16test@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/terms_condition_check")).click();
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.talkWithFamilyCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -65,12 +45,15 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			talkWithFamilyDoc.click();
 			Thread.sleep(1000);
 			
+			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
+			Thread.sleep(1000);
 			MobileElement aboutDoc = driver.findElement(By.id("com.ekincare.development:id/doctor_info_cardView"));
 			aboutDoc.click();
 			Thread.sleep(1000);
-			Assert.assertEquals(driver.getTitle(), "com.ekincare.development:id/doctor_info_cardView");
 			
-			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.development:id/doctor_info_cardView";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			System.out.println("Cause  is: " + e.getCause());
@@ -79,33 +62,15 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 		}
 	}
 	
-	@SuppressWarnings({ "rawtypes", "static-access" })
-//	@Test(priority = 1)
+	
+	@SuppressWarnings("rawtypes")
+	@Test(priority = 1)
 	public void scheduleAppointment() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment");
 		try {
 
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24920@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.talkWithFamilyCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -126,15 +91,13 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
 			action1.press(PointOption.point(680, 1620))
 			.moveTo(PointOption.point(680, 1020))
-			.release()
 			.perform();
-			
-			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
 			Thread.sleep(1000);
+			System.out.println(driver.currentActivity());
 			
 		} catch (Exception e) {
 			
@@ -145,32 +108,13 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void addToCalender() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment and Add to Calender");
 		try {
 
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24920@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.talkWithFamilyCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -191,7 +135,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
 			action1.press(PointOption.point(680, 1620))
 			.moveTo(PointOption.point(680, 1020))
-			.release()
 			.perform();
 			
 			Thread.sleep(1000);
@@ -206,6 +149,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			driver.findElement(By.id("android:id/text1")).click();
 			Thread.sleep(1000);
+			System.out.println(driver.currentActivity());
 			
 		} catch (Exception e) {
 			
@@ -216,32 +160,13 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void scheduleAppointmentPlusReschedule() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment then Reschedule Appointment");
 		try {
 
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24920@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.talkWithFamilyCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -262,7 +187,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
 			action1.press(PointOption.point(680, 1620))
 			.moveTo(PointOption.point(680, 1020))
-			.release()
 			.perform();
 			
 			Thread.sleep(1000);
@@ -285,7 +209,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
 			action2.press(PointOption.point(680, 1620))
 			.moveTo(PointOption.point(680, 1020))
-			.release()
 			.perform();
 			
 			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
@@ -293,6 +216,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 		
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
 			Thread.sleep(1000);
+			System.out.println(driver.currentActivity());
 			
 		} catch (Exception e) {
 			
@@ -303,34 +227,14 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	
-	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void scheduleAppointmentPlusCancel() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment Plus Cancel Appointment");
 		try {
 
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24920@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.talkWithFamilyCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -351,7 +255,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
 			action1.press(PointOption.point(680, 1620))
 			.moveTo(PointOption.point(680, 1020))
-			.release()
 			.perform();
 			
 			Thread.sleep(1000);
@@ -368,6 +271,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/cancel_textview")).click();
 			Thread.sleep(1000);
+			System.out.println(driver.currentActivity());
 
 		} catch (Exception e) {
 			
@@ -378,31 +282,12 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	public void SchedulePlusReschedulePlusCancelAppointment() {
 		
 		try {
 		
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24920@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.talkWithFamilyCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -423,10 +308,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
 			action1.press(PointOption.point(680, 1620))
 			.moveTo(PointOption.point(680, 1020))
-			.release()
 			.perform();
-			
-			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
 			Thread.sleep(1000);
@@ -467,7 +349,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
 				action2.press(PointOption.point(680, 1620))
 				.moveTo(PointOption.point(680, 1020))
-				.release()
 				.perform();
 				
 				driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
@@ -499,33 +380,14 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 6)
+	@Test(priority = 6)
 	public void BookAppointmentWithFamilyMember() {
 		
 		System.out.println("Inside Talk with Family Doctor with Family Member and About Doctor");
 		
 		try {
 			
-			MobileElement skip = driver.findElement(By.id("com.ekincare.development:id/skipButton"));
-			skip.click();
-			Thread.sleep(1000);
-			MobileElement getStarted = driver.findElement(By.id("com.ekincare.development:id/get_started_Button"));
-			getStarted.click();
-			MobileElement corporateEmp = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout"));
-			corporateEmp.click();
-			Thread.sleep(1000);
-			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24920@yopmail.com");
-			Thread.sleep(1000);
-			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
-			nextBtn.click();
-			Thread.sleep(1000);
-			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
-			Thread.sleep(1000);
-			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
-			nextBTN.click();
-			Thread.sleep(1000);
+			login.talkWithFamilyCredentials();
 			
 			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
 			benefits.click();
@@ -552,7 +414,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
 				action1.press(PointOption.point(680, 1620))
 				.moveTo(PointOption.point(680, 1020))
-				.release()
 				.perform();
 				
 				MobileElement tnc = driver.findElement(By.id("com.ekincare.development:id/terms_condition_check"));
@@ -567,11 +428,11 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
 				action2.press(PointOption.point(680, 1620))
 				.moveTo(PointOption.point(680, 1020))
-				.release()
 				.perform();
 				Thread.sleep(1000);
 				
 				driver.findElement(By.id("com.ekincare.development:id/doctor_info")).click();
+				System.out.println(driver.currentActivity());
 				
 			}
 			else {
@@ -599,7 +460,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
 				action1.press(PointOption.point(680, 1620))
 				.moveTo(PointOption.point(680, 1020))
-				.release()
 				.perform();
 				
 				driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
@@ -611,11 +471,11 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
 				action2.press(PointOption.point(680, 1620))
 				.moveTo(PointOption.point(680, 1020))
-				.release()
 				.perform();
 				Thread.sleep(1000);
 				
 				driver.findElement(By.id("com.ekincare.development:id/doctor_info")).click();
+				System.out.println(driver.currentActivity());
 			}
 		} catch (Exception e) {
 

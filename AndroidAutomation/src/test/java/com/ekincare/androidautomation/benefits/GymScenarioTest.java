@@ -1,4 +1,4 @@
-package com.ekincare.androidautomation.home;
+package com.ekincare.androidautomation.benefits;
 
 import static org.testng.Assert.assertEquals;
 
@@ -35,9 +35,13 @@ public class GymScenarioTest extends BaseTest{
 		System.out.println("Inside Gym and Fitness Scenario Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
+			
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
 		
-			MobileElement gym  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
+			MobileElement gym  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.LinearLayout"));
 			gym.click();
 			Thread.sleep(1000);
 			

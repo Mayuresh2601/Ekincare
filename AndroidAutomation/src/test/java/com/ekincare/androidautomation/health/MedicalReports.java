@@ -27,7 +27,7 @@ public class MedicalReports extends BaseTest{
 		System.out.println("Inside Medical Report to Upload and view Report");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
 			MobileElement health = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"PROFILE\"]"));
 			health.click();
@@ -77,7 +77,7 @@ public class MedicalReports extends BaseTest{
 		System.out.println("Inside Medical Report to Upload and Delete Report");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
 			MobileElement health = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"PROFILE\"]"));
 			health.click();

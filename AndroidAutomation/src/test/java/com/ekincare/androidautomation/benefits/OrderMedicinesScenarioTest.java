@@ -1,4 +1,4 @@
-package com.ekincare.androidautomation.home;
+package com.ekincare.androidautomation.benefits;
 
 import static org.testng.Assert.assertEquals;
 
@@ -28,15 +28,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 17)
+	@Test(priority = 15)
 	public void fromGalleryWithoutAddress() {
 		
 		System.out.println("Inside Order Medicines from gallery images without Address Scenario Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -65,11 +69,11 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
 			
-			Thread.sleep(4000);
-			driver.close();
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.health.precipitation.activity.PlaceMedicineSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			System.out.println("Causen is: "+e.getCause());
@@ -79,15 +83,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 18)
+	@Test(priority = 16)
 	public void fromGalleryWithAddress() {
 		
 		System.out.println("Inside Order Medicines from gallery images with Address Scenario Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -106,11 +114,11 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
 			
-			Thread.sleep(4000);
-			driver.close();
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.health.precipitation.activity.PlaceMedicineSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			System.out.println("Causen is: "+e.getCause());
@@ -120,15 +128,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void pastUploadedWithoutAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded without specifying Address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -183,15 +195,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 5)
+	@Test(priority = 5)
 	public void pastUploadedWithAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with specifying Address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -236,15 +252,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 6)
+	@Test(priority = 6)
 	public void pastUploadedChangeAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with changed Address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -308,15 +328,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("static-access")
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void pastUploadedDeleteAddressSelf() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded delete Address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -352,15 +376,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void pastUploadedWithoutAddressFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded without specifying Address Scenario for Family Member Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -376,7 +404,7 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView")).click();
 			Thread.sleep(1000);
 			
 			utility.swipeScreen();
@@ -415,15 +443,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 9)
+	@Test(priority = 9)
 	public void pastUploadedWithAddressFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with specifying Address Scenario for Family Member Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -439,7 +471,7 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView")).click();
 			Thread.sleep(1000);
 			
 			utility.swipeScreen();
@@ -468,15 +500,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 10)
+	@Test(priority = 10)
 	public void pastUploadedChangeAddressFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with changed Address Scenario for Family Member Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -492,7 +528,7 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView")).click();
 			Thread.sleep(1000);
 			
 			utility.swipeScreen();
@@ -546,15 +582,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 		System.out.println("Inside Order Medicines Past Uploaded delete Address Scenario for Family Member Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/past_prescription_lable")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[5]/android.widget.LinearLayout/android.widget.ImageView")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ExpandableListView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView")).click();
 			Thread.sleep(1000);
 			
 			utility.swipeScreen();
@@ -584,15 +624,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 14)
+	@Test(priority = 12)
 	public void pastUploadedWithoutAddressSelfPlusFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded without specifying Address Scenario for Self plus Family Member Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -625,11 +669,11 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
 			
-			Thread.sleep(4000);
-			driver.close();
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.health.precipitation.activity.PlaceMedicineSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			System.out.println("Causen is: "+e.getCause());
@@ -639,15 +683,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-//	@Test(priority = 15)
+	@Test(priority = 13)
 	public void pastUploadedWithAddressSelfPlusFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded with specifying Address Scenario for Self Plus Family Member Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -670,8 +718,11 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			TouchAction action = new TouchAction((PerformsTouchActions) driver);
 			action.press(PointOption.point(91, 2133))
 			.moveTo(PointOption.point(1014, 2133))
-			.release()
 			.perform();
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.health.precipitation.activity.PlaceMedicineSuccessActivity";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			System.out.println("Causen is: "+e.getCause());
@@ -681,15 +732,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("static-access")
-//	@Test(priority = 16)
+	@Test(priority = 14)
 	public void pastUploadedDeleteAddressSelfPlusFamily() {
 		
 		System.out.println("Inside Order Medicines Past Uploaded delete Address Scenario for Self Plus Family Member Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -713,6 +768,10 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.health.precipitation.activity.OrderAddressBookActivity";
+			assertEquals(actualResult, expectedResult);
+			
 		} catch (Exception e) {
 			
 			System.out.println("Causen is: "+e.getCause());
@@ -722,15 +781,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void medicineNameWithoutAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name without address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -775,15 +838,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void medicineNameWithAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name with Address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -818,15 +885,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void medicineNameChangeAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name with change Address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
@@ -880,15 +951,19 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 		}
 	}
 	
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void medicineNameDeleteAddressSelf() {
 		
 		System.out.println("Inside Order Medicines By Name delete Address Scenario for Self Test");
 		try {
 			
-			login.validLoginCredentials();
+			login.talkWithFamilyCredentials();
 			
-			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.view.ViewGroup/android.widget.LinearLayout[1]/android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
 			orderMedicine.click();
 			Thread.sleep(1000);
 			
