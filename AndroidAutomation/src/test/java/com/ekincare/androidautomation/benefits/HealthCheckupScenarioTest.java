@@ -27,7 +27,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void healthCheckupSelf() {
 		
 		System.out.println("Inside Health Checkup for Self Scenario Test");
@@ -50,9 +50,9 @@ public class HealthCheckupScenarioTest extends BaseTest {
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[4]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[5]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[6]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[4]")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
@@ -93,8 +93,8 @@ public class HealthCheckupScenarioTest extends BaseTest {
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(93, 1842))
-			.moveTo(PointOption.point(93, 1000))
+			action1.press(PointOption.point(800, 2070))
+			.moveTo(PointOption.point(800, 1600))
 			.perform();
 			Thread.sleep(2000);
 			
@@ -113,9 +113,9 @@ public class HealthCheckupScenarioTest extends BaseTest {
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[4]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[5]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[6]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[5]")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
@@ -142,7 +142,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void annualhealthCheckupSelf() {
 		
 		System.out.println("Inside Annual Health Checkup for Self Scenario Test");
@@ -177,9 +177,9 @@ public class HealthCheckupScenarioTest extends BaseTest {
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[4]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[5]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[6]")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
@@ -207,7 +207,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void annualhealthCheckupFamilyMember() {
 		
 		System.out.println("Inside Annual Health Checkup for Family member Scenario Test");
@@ -246,9 +246,9 @@ public class HealthCheckupScenarioTest extends BaseTest {
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[5]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[7]")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
@@ -275,7 +275,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void annualhealthCheckupSelfPlusFamilyMember() {
 		
 		System.out.println("Inside Annual Health Checkup for Self plus Family Member Scenario Test");
@@ -310,9 +310,9 @@ public class HealthCheckupScenarioTest extends BaseTest {
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[5]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[1]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.GridView/android.widget.LinearLayout[8]")).click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();

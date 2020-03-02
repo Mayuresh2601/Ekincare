@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="159178" started-at="2020-03-02T07:06:13Z" finished-at="2020-03-02T07:08:52Z">
+  <suite name="Default suite" duration-ms="58173" started-at="2020-03-02T10:10:26Z" finished-at="2020-03-02T10:11:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="159178" started-at="2020-03-02T07:06:13Z" finished-at="2020-03-02T07:08:52Z">
-      <class name="com.ekincare.androidautomation.improve.Challenges">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="8666" started-at="2020-03-02T07:06:13Z" finished-at="2020-03-02T07:06:21Z">
+    <test name="Default test" duration-ms="58173" started-at="2020-03-02T10:10:26Z" finished-at="2020-03-02T10:11:24Z">
+      <class name="com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest@3701eaf6]" name="beginTest" is-config="true" duration-ms="8517" started-at="2020-03-02T10:10:26Z" finished-at="2020-03-02T10:10:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="knowMore()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="knowMore" duration-ms="24500" started-at="2020-03-02T07:06:21Z" finished-at="2020-03-02T07:06:46Z">
+        <test-method status="PASS" signature="healthCheckupFamilyMember()[pri:1, instance:com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest@3701eaf6]" name="healthCheckupFamilyMember" duration-ms="45051" started-at="2020-03-02T10:10:34Z" finished-at="2020-03-02T10:11:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- knowMore -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4592" started-at="2020-03-02T07:06:46Z" finished-at="2020-03-02T07:06:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="8398" started-at="2020-03-02T07:06:50Z" finished-at="2020-03-02T07:06:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="startChallenges()[pri:1, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="startChallenges" duration-ms="26565" started-at="2020-03-02T07:06:59Z" finished-at="2020-03-02T07:07:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startChallenges -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4634" started-at="2020-03-02T07:07:25Z" finished-at="2020-03-02T07:07:30Z">
+        </test-method> <!-- healthCheckupFamilyMember -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest@3701eaf6]" name="endTest" is-config="true" duration-ms="4583" started-at="2020-03-02T10:11:20Z" finished-at="2020-03-02T10:11:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="7410" started-at="2020-03-02T07:07:30Z" finished-at="2020-03-02T07:07:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="stopChallenges()[pri:2, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="stopChallenges" duration-ms="26098" started-at="2020-03-02T07:07:37Z" finished-at="2020-03-02T07:08:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopChallenges -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4593" started-at="2020-03-02T07:08:03Z" finished-at="2020-03-02T07:08:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="8350" started-at="2020-03-02T07:08:08Z" finished-at="2020-03-02T07:08:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="startAndRestartChallenges()[pri:3, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="startAndRestartChallenges" duration-ms="30707" started-at="2020-03-02T07:08:16Z" finished-at="2020-03-02T07:08:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAndRestartChallenges -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4641" started-at="2020-03-02T07:08:47Z" finished-at="2020-03-02T07:08:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.improve.Challenges -->
+      </class> <!-- com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
