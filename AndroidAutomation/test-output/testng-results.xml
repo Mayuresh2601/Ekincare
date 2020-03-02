@@ -2,60 +2,60 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="162096" started-at="2020-03-02T05:38:35Z" finished-at="2020-03-02T05:41:17Z">
+  <suite name="Default suite" duration-ms="159178" started-at="2020-03-02T07:06:13Z" finished-at="2020-03-02T07:08:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="162096" started-at="2020-03-02T05:38:35Z" finished-at="2020-03-02T05:41:17Z">
-      <class name="com.ekincare.androidautomation.health.MedicalReports">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="8037" started-at="2020-03-02T05:38:35Z" finished-at="2020-03-02T05:38:43Z">
+    <test name="Default test" duration-ms="159178" started-at="2020-03-02T07:06:13Z" finished-at="2020-03-02T07:08:52Z">
+      <class name="com.ekincare.androidautomation.improve.Challenges">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="8666" started-at="2020-03-02T07:06:13Z" finished-at="2020-03-02T07:06:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="viewMedicalReport()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="viewMedicalReport" duration-ms="32702" started-at="2020-03-02T05:38:43Z" finished-at="2020-03-02T05:39:16Z">
+        <test-method status="PASS" signature="knowMore()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="knowMore" duration-ms="24500" started-at="2020-03-02T07:06:21Z" finished-at="2020-03-02T07:06:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewMedicalReport -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4513" started-at="2020-03-02T05:39:16Z" finished-at="2020-03-02T05:39:20Z">
+        </test-method> <!-- knowMore -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4592" started-at="2020-03-02T07:06:46Z" finished-at="2020-03-02T07:06:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="7770" started-at="2020-03-02T05:39:20Z" finished-at="2020-03-02T05:39:28Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="8398" started-at="2020-03-02T07:06:50Z" finished-at="2020-03-02T07:06:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="deleteMedicalReport()[pri:1, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="deleteMedicalReport" duration-ms="23201" started-at="2020-03-02T05:39:28Z" finished-at="2020-03-02T05:39:51Z">
+        <test-method status="PASS" signature="startChallenges()[pri:1, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="startChallenges" duration-ms="26565" started-at="2020-03-02T07:06:59Z" finished-at="2020-03-02T07:07:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteMedicalReport -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4594" started-at="2020-03-02T05:39:51Z" finished-at="2020-03-02T05:39:56Z">
+        </test-method> <!-- startChallenges -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4634" started-at="2020-03-02T07:07:25Z" finished-at="2020-03-02T07:07:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="8014" started-at="2020-03-02T05:39:56Z" finished-at="2020-03-02T05:40:04Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="7410" started-at="2020-03-02T07:07:30Z" finished-at="2020-03-02T07:07:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="viewMedicalReportFamily()[pri:2, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="viewMedicalReportFamily" duration-ms="32142" started-at="2020-03-02T05:40:04Z" finished-at="2020-03-02T05:40:36Z">
+        <test-method status="PASS" signature="stopChallenges()[pri:2, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="stopChallenges" duration-ms="26098" started-at="2020-03-02T07:07:37Z" finished-at="2020-03-02T07:08:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewMedicalReportFamily -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4600" started-at="2020-03-02T05:40:36Z" finished-at="2020-03-02T05:40:40Z">
+        </test-method> <!-- stopChallenges -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4593" started-at="2020-03-02T07:08:03Z" finished-at="2020-03-02T07:08:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="7306" started-at="2020-03-02T05:40:40Z" finished-at="2020-03-02T05:40:48Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="beginTest" is-config="true" duration-ms="8350" started-at="2020-03-02T07:08:08Z" finished-at="2020-03-02T07:08:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="deleteMedicalReportFamily()[pri:3, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="deleteMedicalReportFamily" duration-ms="24594" started-at="2020-03-02T05:40:48Z" finished-at="2020-03-02T05:41:12Z">
+        <test-method status="PASS" signature="startAndRestartChallenges()[pri:3, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="startAndRestartChallenges" duration-ms="30707" started-at="2020-03-02T07:08:16Z" finished-at="2020-03-02T07:08:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteMedicalReportFamily -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4597" started-at="2020-03-02T05:41:12Z" finished-at="2020-03-02T05:41:17Z">
+        </test-method> <!-- startAndRestartChallenges -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Challenges@610694f1]" name="endTest" is-config="true" duration-ms="4641" started-at="2020-03-02T07:08:47Z" finished-at="2020-03-02T07:08:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.health.MedicalReports -->
+      </class> <!-- com.ekincare.androidautomation.improve.Challenges -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
