@@ -1,85 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="179002" started-at="2020-02-28T13:34:02Z" finished-at="2020-02-28T13:37:01Z">
+  <suite name="Default suite" duration-ms="162096" started-at="2020-03-02T05:38:35Z" finished-at="2020-03-02T05:41:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="179002" started-at="2020-02-28T13:34:02Z" finished-at="2020-02-28T13:37:01Z">
-      <class name="com.ekincare.androidautomation.HomeTest">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="beginTest" is-config="true" duration-ms="9284" started-at="2020-02-28T13:34:02Z" finished-at="2020-02-28T13:34:11Z">
+    <test name="Default test" duration-ms="162096" started-at="2020-03-02T05:38:35Z" finished-at="2020-03-02T05:41:17Z">
+      <class name="com.ekincare.androidautomation.health.MedicalReports">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="8037" started-at="2020-03-02T05:38:35Z" finished-at="2020-03-02T05:38:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="home()[pri:4, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="home" duration-ms="17919" started-at="2020-02-28T13:34:11Z" finished-at="2020-02-28T13:34:29Z">
+        <test-method status="PASS" signature="viewMedicalReport()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="viewMedicalReport" duration-ms="32702" started-at="2020-03-02T05:38:43Z" finished-at="2020-03-02T05:39:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="endTest" is-config="true" duration-ms="4505" started-at="2020-02-28T13:34:29Z" finished-at="2020-02-28T13:34:34Z">
+        </test-method> <!-- viewMedicalReport -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4513" started-at="2020-03-02T05:39:16Z" finished-at="2020-03-02T05:39:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="beginTest" is-config="true" duration-ms="7572" started-at="2020-02-28T13:34:34Z" finished-at="2020-02-28T13:34:41Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="7770" started-at="2020-03-02T05:39:20Z" finished-at="2020-03-02T05:39:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="viewAll()[pri:4, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="viewAll" duration-ms="19598" started-at="2020-02-28T13:34:41Z" finished-at="2020-02-28T13:35:01Z">
+        <test-method status="PASS" signature="deleteMedicalReport()[pri:1, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="deleteMedicalReport" duration-ms="23201" started-at="2020-03-02T05:39:28Z" finished-at="2020-03-02T05:39:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewAll -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="endTest" is-config="true" duration-ms="4475" started-at="2020-02-28T13:35:01Z" finished-at="2020-02-28T13:35:05Z">
+        </test-method> <!-- deleteMedicalReport -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4594" started-at="2020-03-02T05:39:51Z" finished-at="2020-03-02T05:39:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="beginTest" is-config="true" duration-ms="7273" started-at="2020-02-28T13:35:06Z" finished-at="2020-02-28T13:35:13Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="8014" started-at="2020-03-02T05:39:56Z" finished-at="2020-03-02T05:40:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="health()[pri:5, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="health" duration-ms="17606" started-at="2020-02-28T13:35:13Z" finished-at="2020-02-28T13:35:30Z">
+        <test-method status="PASS" signature="viewMedicalReportFamily()[pri:2, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="viewMedicalReportFamily" duration-ms="32142" started-at="2020-03-02T05:40:04Z" finished-at="2020-03-02T05:40:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- health -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="endTest" is-config="true" duration-ms="4525" started-at="2020-02-28T13:35:30Z" finished-at="2020-02-28T13:35:35Z">
+        </test-method> <!-- viewMedicalReportFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4600" started-at="2020-03-02T05:40:36Z" finished-at="2020-03-02T05:40:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="beginTest" is-config="true" duration-ms="7160" started-at="2020-02-28T13:35:35Z" finished-at="2020-02-28T13:35:42Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="beginTest" is-config="true" duration-ms="7306" started-at="2020-03-02T05:40:40Z" finished-at="2020-03-02T05:40:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="benefits()[pri:6, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="benefits" duration-ms="16191" started-at="2020-02-28T13:35:42Z" finished-at="2020-02-28T13:35:58Z">
+        <test-method status="PASS" signature="deleteMedicalReportFamily()[pri:3, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="deleteMedicalReportFamily" duration-ms="24594" started-at="2020-03-02T05:40:48Z" finished-at="2020-03-02T05:41:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- benefits -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="endTest" is-config="true" duration-ms="4542" started-at="2020-02-28T13:35:58Z" finished-at="2020-02-28T13:36:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="beginTest" is-config="true" duration-ms="7868" started-at="2020-02-28T13:36:03Z" finished-at="2020-02-28T13:36:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="improve()[pri:7, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="improve" duration-ms="17451" started-at="2020-02-28T13:36:11Z" finished-at="2020-02-28T13:36:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- improve -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="endTest" is-config="true" duration-ms="4524" started-at="2020-02-28T13:36:28Z" finished-at="2020-02-28T13:36:33Z">
+        </test-method> <!-- deleteMedicalReportFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.health.MedicalReports@5b87ed94]" name="endTest" is-config="true" duration-ms="4597" started-at="2020-03-02T05:41:12Z" finished-at="2020-03-02T05:41:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="beginTest" is-config="true" duration-ms="6620" started-at="2020-02-28T13:36:33Z" finished-at="2020-02-28T13:36:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="notifications()[pri:8, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="notifications" duration-ms="17356" started-at="2020-02-28T13:36:39Z" finished-at="2020-02-28T13:36:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- notifications -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@610694f1]" name="endTest" is-config="true" duration-ms="4504" started-at="2020-02-28T13:36:57Z" finished-at="2020-02-28T13:37:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.HomeTest -->
+      </class> <!-- com.ekincare.androidautomation.health.MedicalReports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ekincare.androidautomation.HomeTest">
+      <class name="com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest">
         <methods>
-          <include name="beginTest"/>
-          <include name="viewAll"/>
+          <include name="pastUploadedWithoutAddressSelf"/>
           <include name="endTest"/>
+          <include name="beginTest"/>
         </methods>
-      </class> <!-- com.ekincare.androidautomation.HomeTest -->
+      </class> <!-- com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

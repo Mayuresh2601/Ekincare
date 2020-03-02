@@ -89,15 +89,18 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(680, 1620))
-			.moveTo(PointOption.point(680, 1020))
+			action1.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
 			.perform();
 			
 			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
 			Thread.sleep(1000);
-			System.out.println(driver.currentActivity());
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.familydoctorflow.views.DoctorConsultationBooked";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -133,8 +136,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(680, 1620))
-			.moveTo(PointOption.point(680, 1020))
+			action1.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
 			.perform();
 			
 			Thread.sleep(1000);
@@ -149,7 +152,10 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			driver.findElement(By.id("android:id/text1")).click();
 			Thread.sleep(1000);
-			System.out.println(driver.currentActivity());
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.familydoctorflow.views.DoctorConsultationBooked";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -185,8 +191,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(680, 1620))
-			.moveTo(PointOption.point(680, 1020))
+			action1.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
 			.perform();
 			
 			Thread.sleep(1000);
@@ -207,8 +213,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			
 			TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
-			action2.press(PointOption.point(680, 1620))
-			.moveTo(PointOption.point(680, 1020))
+			action2.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
 			.perform();
 			
 			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
@@ -216,7 +222,10 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 		
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
 			Thread.sleep(1000);
-			System.out.println(driver.currentActivity());
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.familydoctorflow.views.DoctorConsultationBooked";
+			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
 			
@@ -253,8 +262,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(680, 1620))
-			.moveTo(PointOption.point(680, 1020))
+			action1.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
 			.perform();
 			
 			Thread.sleep(1000);
@@ -271,7 +280,10 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/cancel_textview")).click();
 			Thread.sleep(1000);
-			System.out.println(driver.currentActivity());
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.familydoctorflow.views.DoctorConsultationBooked";
+			assertEquals(actualResult, expectedResult);
 
 		} catch (Exception e) {
 			
@@ -306,8 +318,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			
 			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-			action1.press(PointOption.point(680, 1620))
-			.moveTo(PointOption.point(680, 1020))
+			action1.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
 			.perform();
 			
 			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
@@ -347,8 +359,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				Thread.sleep(1000);
 				
 				TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
-				action2.press(PointOption.point(680, 1620))
-				.moveTo(PointOption.point(680, 1020))
+				action2.press(PointOption.point(680, 1800))
+				.moveTo(PointOption.point(680, 1200))
 				.perform();
 				
 				driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
@@ -369,6 +381,10 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 					Thread.sleep(1000);
 					driver.findElement(By.id("com.ekincare.development:id/cancel_textview")).click();
 					Thread.sleep(1000);
+					
+					actualResult = driver.currentActivity();
+					expectedResult = "com.ekincare.familydoctorflow.views.DoctorConsultationBooked";
+					assertEquals(actualResult, expectedResult);
 				}
 			}
 		} catch (Exception e) {
@@ -412,8 +428,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				Thread.sleep(1000);
 				
 				TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-				action1.press(PointOption.point(680, 1620))
-				.moveTo(PointOption.point(680, 1020))
+				action1.press(PointOption.point(680, 1800))
+				.moveTo(PointOption.point(680, 1200))
 				.perform();
 				
 				MobileElement tnc = driver.findElement(By.id("com.ekincare.development:id/terms_condition_check"));
@@ -426,13 +442,16 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				Thread.sleep(1000);
 				
 				TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
-				action2.press(PointOption.point(680, 1620))
-				.moveTo(PointOption.point(680, 1020))
+				action2.press(PointOption.point(680, 1800))
+				.moveTo(PointOption.point(680, 1200))
 				.perform();
 				Thread.sleep(1000);
 				
 				driver.findElement(By.id("com.ekincare.development:id/doctor_info")).click();
-				System.out.println(driver.currentActivity());
+				
+				actualResult = driver.currentActivity();
+				expectedResult = "com.ekincare.familydoctorflow.views.FamilyDoctorAboutInfoActivity";
+				assertEquals(actualResult, expectedResult);
 				
 			}
 			else {
@@ -458,8 +477,8 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				Thread.sleep(1000);
 				
 				TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-				action1.press(PointOption.point(680, 1620))
-				.moveTo(PointOption.point(680, 1020))
+				action1.press(PointOption.point(680, 1800))
+				.moveTo(PointOption.point(680, 1200))
 				.perform();
 				
 				driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
@@ -475,7 +494,10 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				Thread.sleep(1000);
 				
 				driver.findElement(By.id("com.ekincare.development:id/doctor_info")).click();
-				System.out.println(driver.currentActivity());
+				
+				actualResult = driver.currentActivity();
+				expectedResult = "com.ekincare.familydoctorflow.views.FamilyDoctorAboutInfoActivity";
+				assertEquals(actualResult, expectedResult);
 			}
 		} catch (Exception e) {
 

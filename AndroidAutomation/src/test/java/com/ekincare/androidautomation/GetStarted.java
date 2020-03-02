@@ -26,8 +26,8 @@ public class GetStarted extends BaseTest {
 	}
 	
 	
-	@SuppressWarnings({ "rawtypes", "static-access" })
-//	@Test(priority = 0)
+	@SuppressWarnings({ "rawtypes" })
+	@Test(priority = 0)
 	public void getStarted() {
 		
 		System.out.println("Inside Get Started Scenario Test");
