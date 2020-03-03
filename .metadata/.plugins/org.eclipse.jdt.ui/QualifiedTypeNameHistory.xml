@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.ekincare.seleniumgrid.BaseTest"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.Platform"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptException"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
@@ -55,9 +54,10 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.Keys"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="okhttp3.Challenge"/>
+<fullyQualifiedTypeName name="com.ekincare.androidautomation.BaseTest"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileElement"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="com.ekincare.androidautomation.BaseTest"/>
-<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 </qualifiedTypeNameHistroy>

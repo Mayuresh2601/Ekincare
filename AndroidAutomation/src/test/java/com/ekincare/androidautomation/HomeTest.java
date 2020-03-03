@@ -292,7 +292,7 @@ public class HomeTest extends BaseTest{
 			
 			login.talkWithFamilyCredentials();
 			
-			MobileElement health = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			MobileElement health = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"PROFILE\"]"));
 			health.click();
 			Thread.sleep(1000);
 

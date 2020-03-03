@@ -127,6 +127,50 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 		}
 	}
 	
+	@Test(priority = 17)
+	public void fromGalleryDeleteAddress() {
+		
+		System.out.println("Inside Order Medicines from gallery images Delete Address Scenario Test");
+		try {
+			
+			login.talkWithFamilyCredentials();
+			
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement orderMedicine  = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[3]"));
+			orderMedicine.click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.id("com.ekincare.development:id/open_gallery_lable")).click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_button")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.id("com.android.permissioncontroller:id/permission_allow_button")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.LinearLayout")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.id("com.ekincare.development:id/order_change_address_label")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.id("com.ekincare.development:id/saved_address_more")).click();
+			Thread.sleep(500);
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout")).click();
+			Thread.sleep(1000);
+			System.out.println(driver.currentActivity());
+			
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.health.precipitation.activity.OrderAddressBookActivity";
+			assertEquals(actualResult, expectedResult);
+			
+		} catch (Exception e) {
+			System.out.println("Causen is: "+e.getCause());
+			System.out.println("Message is: "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
 	@SuppressWarnings({ "static-access", "rawtypes" })
 	@Test(priority = 4)
 	public void pastUploadedWithoutAddressSelf() {
@@ -184,7 +228,7 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			.perform();
 			
 			actualResult = driver.currentActivity();
-			expectedResult = "com.ekincare.health.precipitation.activity.OrderAddressBookActivity";
+			expectedResult = "com.ekincare.health.precipitation.activity.PlaceMedicineSuccessActivity";
 			assertEquals(actualResult, expectedResult);
 			
 		} catch (Exception e) {
@@ -361,7 +405,6 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			Thread.sleep(500);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			System.out.println(driver.currentActivity());
 			
 			actualResult = driver.currentActivity();
 			expectedResult = "com.ekincare.health.precipitation.activity.OrderAddressBookActivity";
@@ -609,7 +652,6 @@ public class OrderMedicinesScenarioTest extends BaseTest {
 			Thread.sleep(500);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
-			System.out.println(driver.currentActivity());
 			
 			actualResult = driver.currentActivity();
 			expectedResult = "com.ekincare.health.precipitation.activity.OrderAddressBookActivity";

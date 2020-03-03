@@ -23,7 +23,7 @@ public class Insights extends BaseTest{
 	@Test
 	public void userWellnessReport() {
 		
-		System.out.println("Inside Medical Report to Upload and view Report");
+		System.out.println("Inside Family Doctor Chat Dashboard");
 		try {
 			
 			login.talkWithFamilyCredentials();

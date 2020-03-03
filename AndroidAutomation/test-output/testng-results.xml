@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58173" started-at="2020-03-02T10:10:26Z" finished-at="2020-03-02T10:11:24Z">
+  <suite name="Default suite" duration-ms="125835" started-at="2020-03-03T05:37:07Z" finished-at="2020-03-03T05:39:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58173" started-at="2020-03-02T10:10:26Z" finished-at="2020-03-02T10:11:24Z">
-      <class name="com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest@3701eaf6]" name="beginTest" is-config="true" duration-ms="8517" started-at="2020-03-02T10:10:26Z" finished-at="2020-03-02T10:10:34Z">
+    <test name="Default test" duration-ms="125835" started-at="2020-03-03T05:37:07Z" finished-at="2020-03-03T05:39:13Z">
+      <class name="com.ekincare.androidautomation.improve.Events">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="beginTest" is-config="true" duration-ms="8451" started-at="2020-03-03T05:37:07Z" finished-at="2020-03-03T05:37:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="healthCheckupFamilyMember()[pri:1, instance:com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest@3701eaf6]" name="healthCheckupFamilyMember" duration-ms="45051" started-at="2020-03-02T10:10:34Z" finished-at="2020-03-02T10:11:20Z">
+        <test-method status="PASS" signature="goingEvent()[pri:0, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="goingEvent" duration-ms="36472" started-at="2020-03-03T05:37:15Z" finished-at="2020-03-03T05:37:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- healthCheckupFamilyMember -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest@3701eaf6]" name="endTest" is-config="true" duration-ms="4583" started-at="2020-03-02T10:11:20Z" finished-at="2020-03-02T10:11:24Z">
+        </test-method> <!-- goingEvent -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="endTest" is-config="true" duration-ms="4484" started-at="2020-03-03T05:37:52Z" finished-at="2020-03-03T05:37:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="beginTest" is-config="true" duration-ms="7575" started-at="2020-03-03T05:37:56Z" finished-at="2020-03-03T05:38:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="notGoingEvent()[pri:1, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="notGoingEvent" duration-ms="24209" started-at="2020-03-03T05:38:04Z" finished-at="2020-03-03T05:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notGoingEvent -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="endTest" is-config="true" duration-ms="4493" started-at="2020-03-03T05:38:28Z" finished-at="2020-03-03T05:38:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="beginTest" is-config="true" duration-ms="6216" started-at="2020-03-03T05:38:33Z" finished-at="2020-03-03T05:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="notSureEvent()[pri:2, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="notSureEvent" duration-ms="29392" started-at="2020-03-03T05:38:39Z" finished-at="2020-03-03T05:39:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notSureEvent -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.improve.Events@5b87ed94]" name="endTest" is-config="true" duration-ms="4514" started-at="2020-03-03T05:39:08Z" finished-at="2020-03-03T05:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.ekincare.androidautomation.improve.Events -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

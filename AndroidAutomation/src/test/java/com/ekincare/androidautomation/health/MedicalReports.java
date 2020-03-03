@@ -104,7 +104,6 @@ public class MedicalReports extends BaseTest{
 		}
 	}
 	
-	@SuppressWarnings("static-access")
 	@Test(priority = 2)
 	public void viewMedicalReportFamily() {
 		
