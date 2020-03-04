@@ -20,7 +20,7 @@ public class DentalCheckup extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 0)
+	@Test(priority = 32)
 	public  void dentalCheckup() {
 		
 		System.out.println("Inside Dental Checkup Activity");

@@ -25,7 +25,7 @@ public class FamilyMembers extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public void addFamilyMember() {
 		
 		System.out.println("Inside Add Family Members Scenario Test");

@@ -41,7 +41,7 @@ public class GetStarted extends BaseTest {
 			corporateEmp.click();
 			Thread.sleep(1000);
 			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24320@yopmail.com");
+			email.sendKeys("testfeb241120@yopmail.com");
 			Thread.sleep(1000);
 			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
 			nextBtn.click();

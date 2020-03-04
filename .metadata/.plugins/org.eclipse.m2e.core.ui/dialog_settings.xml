@@ -26,6 +26,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.ekincare.demo"/>
 			<item value="com.ekincare.seleniumgrid"/>
 			<item value="com.ekincare.webautomation"/>
 			<item value="com.ekincare.androidautomation"/>
@@ -37,6 +38,7 @@
 			<item value="AndroidAutomation"/>
 		</list>
 		<list key="artifactId">
+			<item value="Demo"/>
 			<item value="SeleniumGrid"/>
 			<item value="WebAutomation"/>
 			<item value="AndroidAutomation"/>

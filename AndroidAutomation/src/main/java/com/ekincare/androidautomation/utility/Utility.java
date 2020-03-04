@@ -46,7 +46,16 @@ public class Utility extends BaseTest{
 		TouchAction action = new TouchAction((PerformsTouchActions) driver);
 		action.press(PointOption.point(start_x, start_y))
 		.moveTo(PointOption.point(end_x, end_y))
-		.release()
+		.perform();
+	}
+	
+	
+	@SuppressWarnings("rawtypes")
+	public static void swipeYear() {
+		
+		TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
+		action1.press(PointOption.point(565, 760))
+		.moveTo(PointOption.point(565, 1600))
 		.perform();
 	}
 

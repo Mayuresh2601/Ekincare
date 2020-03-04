@@ -20,7 +20,7 @@ public class Events extends BaseTest {
 		utility.init_Driver();
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 52)
 	public void goingEvent() {
 
 		System.out.println("Inside Going Event and Checking in Registred Event");
@@ -64,7 +64,7 @@ public class Events extends BaseTest {
 		}
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 53)
 	public void notGoingEvent() {
 
 		System.out.println("Inside Not Going Event from Registred Event");
@@ -99,7 +99,7 @@ public class Events extends BaseTest {
 		}
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 54)
 	public void notSureEvent() {
 
 		System.out.println("Inside Not Sure Event");

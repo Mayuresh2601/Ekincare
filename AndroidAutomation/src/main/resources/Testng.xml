@@ -6,12 +6,20 @@
 		<listener class-name="com.ekincare.androidautomation.extentreport.ExtentReporterNG" />		
 	</listeners>
 	
-	<test name = "Ekincare apk Test">
+	<test name = "Ekincare_Apk_Test">
 	
 		<classes>
-			<class name="com.ekincare.androidautomation.home.HealthCheckupScenarioTest" />
-			<class name="com.ekincare.androidautomation.home.GymScenarioTest" />
-		</classes>
+			<class name="com.ekincare.androidautomation.HomeTest" />
+			<class name="com.ekincare.androidautomation.benefits.GymScenarioTest" />
+			<class name="com.ekincare.androidautomation.benefits.HealthCheckupScenarioTest" />
+			<class name="com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest" />
+			<class name="com.ekincare.androidautomation.benefits.TalkWithDoctorTest" />
+			<class name="com.ekincare.androidautomation.benefits.TalkWithFamilyDoctorTest" />
+			<class name="com.ekincare.androidautomation.health.MedicalReports" />
+			<class name="com.ekincare.androidautomation.health.Insights" />
+			<class name="com.ekincare.androidautomation.improve.Challenges" />
+			<class name="com.ekincare.androidautomation.improve.Events" />
+ 		</classes>
 		
 	</test>
 </suite>

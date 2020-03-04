@@ -27,7 +27,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 0)
+	@Test(priority = 12)
 	public void healthCheckupSelf() {
 		
 		System.out.println("Inside Health Checkup for Self Scenario Test");
@@ -80,7 +80,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	
 
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 1)
+	@Test(priority = 13)
 	public void healthCheckupFamilyMember() {
 		
 		System.out.println("Inside Health Checkup for Family member Scenario Test");
@@ -142,7 +142,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 2)
+	@Test(priority = 14)
 	public void annualhealthCheckupSelf() {
 		
 		System.out.println("Inside Annual Health Checkup for Self Scenario Test");
@@ -207,7 +207,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 3)
+	@Test(priority = 15)
 	public void annualhealthCheckupFamilyMember() {
 		
 		System.out.println("Inside Annual Health Checkup for Family member Scenario Test");
@@ -275,7 +275,7 @@ public class HealthCheckupScenarioTest extends BaseTest {
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 4)
+	@Test(priority = 16)
 	public void annualhealthCheckupSelfPlusFamilyMember() {
 		
 		System.out.println("Inside Annual Health Checkup for Self plus Family Member Scenario Test");

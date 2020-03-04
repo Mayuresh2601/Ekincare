@@ -66,7 +66,7 @@ public class LoginTest extends BaseTest{
 	
 	
 	@SuppressWarnings("static-access")
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void validUsernameInvalidPasswordTest() {
 		
 		try {
@@ -105,7 +105,7 @@ public class LoginTest extends BaseTest{
 		}
 	}
 	
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void invalidUsernameValidPasswordTest() {
 		
 		try {
@@ -131,7 +131,7 @@ public class LoginTest extends BaseTest{
 		}
 	}
 	
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void invalidUsernameInvalidPasswordTest() {
 		
 		try {
