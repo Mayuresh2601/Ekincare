@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87743" started-at="2020-03-04T12:51:46Z" finished-at="2020-03-04T12:53:14Z">
+  <suite name="Default suite" duration-ms="54581" started-at="2020-03-05T11:48:14Z" finished-at="2020-03-05T11:49:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87743" started-at="2020-03-04T12:51:46Z" finished-at="2020-03-04T12:53:14Z">
-      <class name="com.ekincare.androidautomation.benefits.TalkWithDoctorTest">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.TalkWithDoctorTest@47ef968d]" name="beginTest" is-config="true" duration-ms="10047" started-at="2020-03-04T12:51:46Z" finished-at="2020-03-04T12:51:56Z">
+    <test name="Default test" duration-ms="54581" started-at="2020-03-05T11:48:14Z" finished-at="2020-03-05T11:49:08Z">
+      <class name="com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@3701eaf6]" name="beginTest" is-config="true" duration-ms="8604" started-at="2020-03-05T11:48:14Z" finished-at="2020-03-05T11:48:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="talkWithDoctorAddFamily()[pri:36, instance:com.ekincare.androidautomation.benefits.TalkWithDoctorTest@47ef968d]" name="talkWithDoctorAddFamily" duration-ms="73137" started-at="2020-03-04T12:51:56Z" finished-at="2020-03-04T12:53:09Z">
+        <test-method status="PASS" signature="fromGalleryDeleteAddressPlusAddAddress()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@3701eaf6]" name="fromGalleryDeleteAddressPlusAddAddress" duration-ms="41456" started-at="2020-03-05T11:48:22Z" finished-at="2020-03-05T11:49:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- talkWithDoctorAddFamily -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.TalkWithDoctorTest@47ef968d]" name="endTest" is-config="true" duration-ms="4541" started-at="2020-03-04T12:53:09Z" finished-at="2020-03-04T12:53:14Z">
+        </test-method> <!-- fromGalleryDeleteAddressPlusAddAddress -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@3701eaf6]" name="endTest" is-config="true" duration-ms="4500" started-at="2020-03-05T11:49:04Z" finished-at="2020-03-05T11:49:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.benefits.TalkWithDoctorTest -->
+      </class> <!-- com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

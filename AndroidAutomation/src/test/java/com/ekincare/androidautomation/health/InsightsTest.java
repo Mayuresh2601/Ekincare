@@ -5,13 +5,16 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
 
-public class Insights extends BaseTest{
+@Listeners(CustomListner.class)
+public class InsightsTest extends BaseTest{
 	
 	@SuppressWarnings("static-access")
 	@BeforeMethod
@@ -20,7 +23,7 @@ public class Insights extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 47)
+	@Test(priority = 54)
 	public void userWellnessReport() {
 		
 		System.out.println("Inside Family Doctor Chat Dashboard");

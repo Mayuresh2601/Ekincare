@@ -5,13 +5,16 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
 
-public class Events extends BaseTest {
+@Listeners(CustomListner.class)
+public class EventsTest extends BaseTest {
 
 	@SuppressWarnings("static-access")
 	@BeforeMethod
@@ -20,7 +23,7 @@ public class Events extends BaseTest {
 		utility.init_Driver();
 	}
 
-	@Test(priority = 52)
+	@Test(priority = 59)
 	public void goingEvent() {
 
 		System.out.println("Inside Going Event and Checking in Registred Event");
@@ -64,7 +67,7 @@ public class Events extends BaseTest {
 		}
 	}
 	
-	@Test(priority = 53)
+	@Test(priority = 60)
 	public void notGoingEvent() {
 
 		System.out.println("Inside Not Going Event from Registred Event");
@@ -99,7 +102,7 @@ public class Events extends BaseTest {
 		}
 	}
 	
-	@Test(priority = 54)
+	@Test(priority = 61)
 	public void notSureEvent() {
 
 		System.out.println("Inside Not Sure Event");

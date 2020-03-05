@@ -7,16 +7,19 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class FamilyMembers extends BaseTest{
+@Listeners(CustomListner.class)
+public class FamilyMembersTest extends BaseTest{
 	
 	@SuppressWarnings("static-access")
 	@BeforeMethod
@@ -25,13 +28,13 @@ public class FamilyMembers extends BaseTest{
 		utility.init_Driver();
 	}
 	
-//	@Test(priority = 0)
+	@Test(priority = 62)
 	public void addFamilyMember() {
 		
 		System.out.println("Inside Add Family Members Scenario Test");
 		try {
 			
-			login.talkWithFamilyCredentials();
+			login.talkWithDocCredentials();
 			
 			MobileElement profileBtn = driver.findElement(By.id("com.ekincare.development:id/profile_imageview"));
 			profileBtn.click();
@@ -42,11 +45,11 @@ public class FamilyMembers extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/add_family")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.GridView/android.widget.FrameLayout[2]")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.GridView/android.widget.FrameLayout[5]")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/robotoTextView5")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("Shreeraksha");
+			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("Shree");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
@@ -55,12 +58,12 @@ public class FamilyMembers extends BaseTest{
 			
 			List<MobileElement> date = driver.findElements(By.id("android:id/numberpicker_input"));
 			date.get(0).click();
-			date.get(0).sendKeys("Nov");
-			date.get(0).sendKeys("Nov");
+			date.get(0).sendKeys("Jan");
+			date.get(0).sendKeys("Jan");
 			
 			date.get(1).click();
-			date.get(1).sendKeys("11");
-			date.get(1).sendKeys("11");
+			date.get(1).sendKeys("15");
+			date.get(1).sendKeys("15");
 			
 			date.get(2).click();
 			date.get(2).sendKeys("1996");
@@ -72,7 +75,7 @@ public class FamilyMembers extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("1239314567");
+			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("9284017394");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
@@ -91,13 +94,13 @@ public class FamilyMembers extends BaseTest{
 
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 1)
+	@Test(priority = 63)
 	public void familyMemberHRA() {
 		
 		System.out.println("Inside Family Members Complete HRA Scenario Test");
 		try {
 			
-			login.talkWithFamilyCredentials();
+			login.talkWithDocCredentials();
 			
 			MobileElement profileBtn = driver.findElement(By.id("com.ekincare.development:id/profile_imageview"));
 			profileBtn.click();
@@ -191,7 +194,7 @@ public class FamilyMembers extends BaseTest{
 			e.printStackTrace();
 		}
 	}
-	
+
 	
 	@SuppressWarnings("static-access")
 	@AfterMethod

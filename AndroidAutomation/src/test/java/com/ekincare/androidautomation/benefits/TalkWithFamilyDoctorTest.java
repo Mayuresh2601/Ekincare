@@ -31,7 +31,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 37)
+	@Test(priority = 43)
 	public void scheduleAppointment() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment");
@@ -50,7 +50,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[2]")).click();
 			Thread.sleep(1000);
@@ -78,7 +78,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 38)
+	@Test(priority = 44)
 	public void addToCalender() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment and Add to Calender");
@@ -97,7 +97,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[3]")).click();
 			Thread.sleep(1000);
@@ -133,7 +133,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-	@Test(priority = 39)
+	@Test(priority = 45)
 	public void scheduleAppointmentPlusReschedule() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment then Reschedule Appointment");
@@ -152,7 +152,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[4]")).click();
 			Thread.sleep(1000);
@@ -174,7 +174,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			
 			driver.findElement(By.id("com.ekincare.development:id/schedule_appointment")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[5]")).click();
 			Thread.sleep(1000);
@@ -204,7 +204,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-	@Test(priority = 40)
+	@Test(priority = 46)
 	public void scheduleAppointmentPlusCancel() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment Plus Cancel Appointment");
@@ -223,7 +223,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[6]")).click();
 			Thread.sleep(1000);
@@ -262,7 +262,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access", "rawtypes" })
-	@Test(priority = 41)
+	@Test(priority = 47)
 	public void SchedulePlusReschedulePlusCancelAppointment() {
 		
 		System.out.println("Inside Talk with Family Doctor Schedule Appointment");
@@ -281,7 +281,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[8]")).click();
 			Thread.sleep(1000);
@@ -322,7 +322,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 				RescheduleBtn.click();
 				Thread.sleep(1000);
 				
-				driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+				driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 				Thread.sleep(1000);
 				driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[9]")).click();
 				Thread.sleep(1000);
@@ -365,7 +365,7 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 42)
+	@Test(priority = 48)
 	public void BookAppointmentWithFamilyMember() {
 		
 		System.out.println("Inside Talk with Family Doctor with Family Member and About Doctor");
@@ -385,90 +385,40 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[10]")).click();
 			Thread.sleep(1000);
 			
-			List<MobileElement> icons = driver.findElements(By.id("com.ekincare.development:id/customer_logo_icons"));
-			System.out.println(icons.size());
-			if(icons.size() >= 4) {
-				
-				driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ImageView")).click();
-				Thread.sleep(1000);
-				
-				TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-				action1.press(PointOption.point(680, 1800))
-				.moveTo(PointOption.point(680, 1200))
-				.perform();
-				
-				MobileElement tnc = driver.findElement(By.id("com.ekincare.development:id/terms_condition_check"));
-				tnc.click();	
-				Thread.sleep(1000);
-				driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
-				Thread.sleep(1000);
-			
-				driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
-				Thread.sleep(1000);
-				
-				TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
-				action2.press(PointOption.point(680, 1800))
-				.moveTo(PointOption.point(680, 1200))
-				.perform();
-				Thread.sleep(1000);
-				
-				driver.findElement(By.id("com.ekincare.development:id/doctor_info")).click();
-				
-				actualResult = driver.currentActivity();
-				expectedResult = "com.ekincare.familydoctorflow.views.FamilyDoctorAboutInfoActivity";
-				assertEquals(actualResult, expectedResult);
-				
-			}
-			else {
-				driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[3]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout["+ icons.size() +"]/android.widget.FrameLayout/android.widget.ImageView")).click();
-				Thread.sleep(1000);
-				
-				driver.findElement(By.id("com.ekincare.development:id/name")).sendKeys("Sudeep Narayan");
-				Thread.sleep(1000);
-			
-				driver.findElement(By.id("com.ekincare.development:id/date_of_birth")).click();
-				driver.findElement(By.id("com.ekincare.development:id/date_of_birth")).click();
-				
-				MobileElement okBtn = driver.findElement(By.id("android:id/button1"));
-				okBtn.click(); 
-				Thread.sleep(1000);
-				
-				driver.findElement(By.id("android:id/text1")).click();
-				MobileElement father = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.CheckedTextView[1]"));
-				father.click();
-				Thread.sleep(1000);
-				
-				driver.findElement(By.id("com.ekincare.development:id/add_member")).click();
-				Thread.sleep(1000);
-				
-				TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
-				action1.press(PointOption.point(680, 1800))
-				.moveTo(PointOption.point(680, 1200))
-				.perform();
-				
-				driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
-				Thread.sleep(1000);
-			
-				driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
-				Thread.sleep(1000);
-				
-				TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
-				action2.press(PointOption.point(680, 1620))
-				.moveTo(PointOption.point(680, 1020))
-				.perform();
-				Thread.sleep(1000);
-				
-				driver.findElement(By.id("com.ekincare.development:id/doctor_info")).click();
-				
-				actualResult = driver.currentActivity();
-				expectedResult = "com.ekincare.familydoctorflow.views.FamilyDoctorAboutInfoActivity";
-				assertEquals(actualResult, expectedResult);
-			}
+			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
+			action1.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
+			.perform();
+
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.FrameLayout/android.widget.ImageView")).click();
+			Thread.sleep(1000);
+
+			MobileElement tnc = driver.findElement(By.id("com.ekincare.development:id/terms_condition_check"));
+			tnc.click();
+			Thread.sleep(1000);
+			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
+			Thread.sleep(1000);
+
+			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
+			Thread.sleep(2000);
+
+			TouchAction action2 = new TouchAction((PerformsTouchActions) driver);
+			action2.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
+			.perform();
+			Thread.sleep(1000);
+
+			driver.findElement(By.id("com.ekincare.development:id/doctor_info")).click();
+
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.familydoctorflow.views.FamilyDoctorAboutInfoActivity";
+			assertEquals(actualResult, expectedResult);
+
 		} catch (Exception e) {
 
 			System.out.println("Cause  is: " + e.getCause());
@@ -478,76 +428,92 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 	}
 	
 	
-//	@SuppressWarnings("static-access")
-//	@Test(priority = 6)
-//	public void BookAppointmentAddFamilyMember() {
-//		
-//		System.out.println("Inside Talk with Family Doctor to Add Family Member");
-//		
-//		try {
-//			
-//			login.talkWithFamilyCredentials();
-//			
-//			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
-//			benefits.click();
-//			Thread.sleep(1000);
-//			
-//			MobileElement talkWithFamilyDoc = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
-//			talkWithFamilyDoc.click();
-//			Thread.sleep(1000);
-//			
-//			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
-//			Thread.sleep(1000);
-//			
-//			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[2]/android.widget.LinearLayout")).click();
-//			Thread.sleep(1000);
-//			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[10]")).click();
-//			Thread.sleep(1000);
-//			
-//			List<MobileElement> icons = driver.findElements(By.id("com.ekincare.development:id/customer_logo_icons"));
-//			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout["+ icons.size() +"]/android.widget.FrameLayout/android.widget.ImageView")).click();
-//			Thread.sleep(1000);
-//			
-//			driver.findElement(By.id("com.ekincare.development:id/name")).sendKeys("karthik Iyer");
-//			Thread.sleep(1000);
-//			
-//			MobileElement dateOfBirth = driver.findElement(By.id("com.ekincare.development:id/date_of_birth"));
-//			dateOfBirth.click();
-//			dateOfBirth.click();
-//			
-//			driver.findElement(By.id("android:id/date_picker_header_year")).click();
-//			Thread.sleep(1000);
-//			
-//			for (int i = 0; i < 7; i++) {
-//				
-//				utility.swipeYear();
-//			}
-//			Thread.sleep(1000);
-//			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.ScrollView/android.widget.ViewAnimator/android.widget.ListView/android.widget.TextView[1]")).click();
-//			Thread.sleep(1000);
-//			driver.findElement(By.id("android:id/button1")).click();
-//			Thread.sleep(1000);
-//			
-//			driver.findElement(By.id("android:id/text1")).click();
-//			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.CheckedTextView[1]")).click();
-//			Thread.sleep(1000);
-//			
-//			driver.findElement(By.id("com.ekincare.development:id/add_member")).click();
-//			System.out.println(driver.currentActivity());
-//			Thread.sleep(6000);
-//
-//		} catch (Exception e) {
-//
-//			System.out.println("Cause  is: " + e.getCause());
-//			System.out.println("Message is: " + e.getMessage());
-//			e.printStackTrace();
-//		}
-//	}
+	@SuppressWarnings({ "static-access", "rawtypes" })
+	@Test(priority = 49)
+	public void BookAppointmentAddFamilyMember() {
+		
+		System.out.println("Inside Talk with Family Doctor to Add Family Member");
+		
+		try {
+			
+			login.talkWithFamilyCredentials();
+			
+			MobileElement benefits = driver.findElement(By.xpath("//android.support.v7.app.ActionBar.Tab[@content-desc=\"Benefits\"]"));
+			benefits.click();
+			Thread.sleep(1000);
+			
+			MobileElement talkWithFamilyDoc = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[4]"));
+			talkWithFamilyDoc.click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.id("com.ekincare.development:id/schedule_call_imageview")).click();
+			Thread.sleep(1000);
+			
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.FrameLayout[3]/android.widget.LinearLayout")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.widget.GridView/android.widget.LinearLayout[11]")).click();
+			Thread.sleep(1000);
+			
+			TouchAction action1 = new TouchAction((PerformsTouchActions) driver);
+			action1.press(PointOption.point(680, 1800))
+			.moveTo(PointOption.point(680, 1200))
+			.perform();
+			
+			List<MobileElement> icons = driver.findElements(By.id("com.ekincare.development:id/customer_logo_icons"));
+			System.out.println(icons.size());
+
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout["+ icons.size() + "]/android.widget.FrameLayout/android.widget.ImageView")).click();
+			Thread.sleep(1000);
+
+			driver.findElement(By.id("com.ekincare.development:id/name")).sendKeys("Ashwini Test");
+			Thread.sleep(1000);
+
+			MobileElement dateOfBirth = driver.findElement(By.id("com.ekincare.development:id/date_of_birth"));
+			dateOfBirth.click();
+			dateOfBirth.click();
+
+			driver.findElement(By.id("android:id/date_picker_header_year")).click();
+			Thread.sleep(1000);
+
+			for (int i = 0; i < 7; i++) {
+
+				utility.swipeYear();
+			}
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.DatePicker/android.widget.LinearLayout/android.widget.ScrollView/android.widget.ViewAnimator/android.widget.ListView/android.widget.TextView[1]")).click();
+			Thread.sleep(1000);
+			driver.findElement(By.id("android:id/button1")).click();
+			Thread.sleep(1000);
+
+			driver.findElement(By.id("android:id/text1")).click();
+			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.CheckedTextView[1]")).click();
+			Thread.sleep(1000);
+
+			driver.findElement(By.id("com.ekincare.development:id/add_member")).click();
+
+			driver.findElement(By.id("com.ekincare.development:id/mobile_number")).sendKeys("1234567890");
+			Thread.sleep(1000);
+
+			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
+			Thread.sleep(1000);
+
+			actualResult = driver.currentActivity();
+			expectedResult = "com.ekincare.familydoctorflow.views.DoctorConsultationBooked";
+			assertEquals(actualResult, expectedResult);
+
+		} catch (Exception e) {
+
+			System.out.println("Cause  is: " + e.getCause());
+			System.out.println("Message is: " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
 	
 	@SuppressWarnings("static-access")
 	@AfterMethod
-	public void endTest() {
+	public void endTest() throws InterruptedException {
 		
+		Thread.sleep(5000);
 		utility.quit_Driver();
 	}
 }

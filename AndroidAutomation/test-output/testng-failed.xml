@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Ekincare Android Application Test Automation Suite]">
-  <listeners>
-    <listener class-name="com.ekincare.androidautomation.extentreport.ExtentReporterNG"/>
-  </listeners>
-  <test thread-count="5" name="Ekincare_Apk_Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ekincare.androidautomation.HomeTest">
+      <class name="com.ekincare.androidautomation.profile.FamilyMembersTest">
         <methods>
-          <include name="beginTest"/>
-          <include name="scheduleAppointment"/>
           <include name="endTest"/>
+          <include name="addFamilyMember"/>
+          <include name="beginTest"/>
         </methods>
-      </class> <!-- com.ekincare.androidautomation.HomeTest -->
+      </class> <!-- com.ekincare.androidautomation.profile.FamilyMembersTest -->
     </classes>
-  </test> <!-- Ekincare_Apk_Test(failed) -->
-</suite> <!-- Failed suite [Ekincare Android Application Test Automation Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

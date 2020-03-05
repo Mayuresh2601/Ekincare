@@ -5,16 +5,19 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 
-public class Challenges extends BaseTest{
+@Listeners(CustomListner.class)
+public class ChallengesTest extends BaseTest{
 	
 	@SuppressWarnings("static-access")
 	@BeforeMethod
@@ -24,7 +27,7 @@ public class Challenges extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 48)
+	@Test(priority = 55)
 	public void knowMore() {
 		
 		System.out.println("Inside Know More About Challenege Activity");
@@ -63,7 +66,7 @@ public class Challenges extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 49)
+	@Test(priority = 56)
 	public void startChallenges() {
 		
 		System.out.println("Inside Start Challeneges Activity");
@@ -107,7 +110,7 @@ public class Challenges extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 50)
+	@Test(priority = 57)
 	public void stopChallenges() {
 		
 		System.out.println("Inside Stop Challeneges Activity");
@@ -153,7 +156,7 @@ public class Challenges extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 51)
+	@Test(priority = 58)
 	public  void startAndRestartChallenges() {
 	
 		try {

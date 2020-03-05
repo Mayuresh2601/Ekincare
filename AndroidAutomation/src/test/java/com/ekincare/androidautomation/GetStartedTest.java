@@ -16,7 +16,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 
 @Listeners(CustomListner.class)
-public class GetStarted extends BaseTest {
+public class GetStartedTest extends BaseTest {
 
 	@SuppressWarnings("static-access")
 	@BeforeMethod

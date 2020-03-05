@@ -5,13 +5,16 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
+import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
 
-public class MedicalReports extends BaseTest{
+@Listeners(CustomListner.class)
+public class MedicalReportsTest extends BaseTest{
 	
 	
 	@SuppressWarnings("static-access")
@@ -21,10 +24,10 @@ public class MedicalReports extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 43)
+	@Test(priority = 50)
 	public void viewMedicalReport() {
 		
-		System.out.println("Inside Medical Report to Upload and view Report");
+		System.out.println("Inside Medical Report to Upload and view Report for Self");
 		try {
 			
 			login.talkWithFamilyCredentials();
@@ -71,10 +74,10 @@ public class MedicalReports extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 44)
+	@Test(priority = 51)
 	public void deleteMedicalReport() {
 		
-		System.out.println("Inside Medical Report to Upload and Delete Report");
+		System.out.println("Inside Medical Report to Delete Report for Self");
 		try {
 			
 			login.talkWithFamilyCredentials();
@@ -104,7 +107,7 @@ public class MedicalReports extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 45)
+	@Test(priority = 52)
 	public void viewMedicalReportFamily() {
 		
 		System.out.println("Inside Medical Report to Upload and View Report of Family Member");
@@ -152,10 +155,10 @@ public class MedicalReports extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 46)
+	@Test(priority = 53)
 	public void deleteMedicalReportFamily() {
 		
-		System.out.println("Inside Medical Report to Upload and Delete Report of Family Member");
+		System.out.println("Inside Medical Report to Delete Report of Family Member");
 		try {
 			
 			login.talkWithFamilyCredentials();
