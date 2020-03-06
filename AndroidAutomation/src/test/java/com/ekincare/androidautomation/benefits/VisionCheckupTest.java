@@ -5,19 +5,16 @@ import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.ekincare.androidautomation.BaseTest;
-import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
 
-@Listeners(CustomListner.class)
-public class DentalCheckupTest extends BaseTest{
+public class VisionCheckupTest extends BaseTest{
 	
 	@SuppressWarnings("static-access")
 	@BeforeMethod
@@ -25,12 +22,12 @@ public class DentalCheckupTest extends BaseTest{
 
 		utility.init_Driver();
 	}
-	
+
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 50)
-	public void dentalCheckup() {
+	@Test(priority = 51)
+	public void visionCheckup() {
 		
-		System.out.println("Inside Dental Checkup Activity");
+		System.out.println("Inside Vision Checkup Activity");
 		
 		try {
 			
@@ -40,8 +37,8 @@ public class DentalCheckupTest extends BaseTest{
 			benefits.click();
 			Thread.sleep(1000);
 			
-			MobileElement dentalCheckup = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[5]"));
-			dentalCheckup.click();
+			MobileElement visionCheckup = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.LinearLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[6]"));
+			visionCheckup.click();
 			Thread.sleep(1000);
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout/android.widget.RadioButton")).click();

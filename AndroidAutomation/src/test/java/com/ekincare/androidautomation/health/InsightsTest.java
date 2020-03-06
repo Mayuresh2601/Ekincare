@@ -23,7 +23,7 @@ public class InsightsTest extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 54)
+	@Test(priority = 56)
 	public void userWellnessReport() {
 		
 		System.out.println("Inside Family Doctor Chat Dashboard");

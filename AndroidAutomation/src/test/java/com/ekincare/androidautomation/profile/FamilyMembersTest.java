@@ -28,7 +28,7 @@ public class FamilyMembersTest extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 62)
+	@Test(priority = 64)
 	public void addFamilyMember() {
 		
 		System.out.println("Inside Add Family Members Scenario Test");
@@ -94,7 +94,7 @@ public class FamilyMembersTest extends BaseTest{
 
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 63)
+	@Test(priority = 65)
 	public void familyMemberHRA() {
 		
 		System.out.println("Inside Family Members Complete HRA Scenario Test");
@@ -194,7 +194,6 @@ public class FamilyMembersTest extends BaseTest{
 			e.printStackTrace();
 		}
 	}
-
 	
 	@SuppressWarnings("static-access")
 	@AfterMethod

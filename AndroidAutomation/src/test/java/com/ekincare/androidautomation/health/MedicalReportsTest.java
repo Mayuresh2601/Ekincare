@@ -24,7 +24,7 @@ public class MedicalReportsTest extends BaseTest{
 		utility.init_Driver();
 	}
 	
-	@Test(priority = 50)
+	@Test(priority = 52)
 	public void viewMedicalReport() {
 		
 		System.out.println("Inside Medical Report to Upload and view Report for Self");
@@ -74,7 +74,7 @@ public class MedicalReportsTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 51)
+	@Test(priority = 53)
 	public void deleteMedicalReport() {
 		
 		System.out.println("Inside Medical Report to Delete Report for Self");
@@ -107,7 +107,7 @@ public class MedicalReportsTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 52)
+	@Test(priority = 54)
 	public void viewMedicalReportFamily() {
 		
 		System.out.println("Inside Medical Report to Upload and View Report of Family Member");
@@ -155,7 +155,7 @@ public class MedicalReportsTest extends BaseTest{
 		}
 	}
 	
-	@Test(priority = 53)
+	@Test(priority = 55)
 	public void deleteMedicalReportFamily() {
 		
 		System.out.println("Inside Medical Report to Delete Report of Family Member");

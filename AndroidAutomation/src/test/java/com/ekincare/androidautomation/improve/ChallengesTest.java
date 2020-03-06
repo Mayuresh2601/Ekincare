@@ -27,7 +27,7 @@ public class ChallengesTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 55)
+	@Test(priority = 57)
 	public void knowMore() {
 		
 		System.out.println("Inside Know More About Challenege Activity");
@@ -66,7 +66,7 @@ public class ChallengesTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 56)
+	@Test(priority = 58)
 	public void startChallenges() {
 		
 		System.out.println("Inside Start Challeneges Activity");
@@ -110,7 +110,7 @@ public class ChallengesTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 57)
+	@Test(priority = 59)
 	public void stopChallenges() {
 		
 		System.out.println("Inside Stop Challeneges Activity");
@@ -156,7 +156,7 @@ public class ChallengesTest extends BaseTest{
 	}
 	
 	@SuppressWarnings("rawtypes")
-	@Test(priority = 58)
+	@Test(priority = 60)
 	public  void startAndRestartChallenges() {
 	
 		try {
