@@ -75,7 +75,7 @@ public class FamilyMembersTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);
 			
-			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("9284017394");
+			driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check")).sendKeys("8495820381");
 			Thread.sleep(1000);
 			driver.findElement(By.id("com.ekincare.development:id/register_next_view")).click();
 			Thread.sleep(1000);

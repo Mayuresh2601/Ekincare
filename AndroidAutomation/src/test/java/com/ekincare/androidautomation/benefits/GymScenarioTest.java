@@ -29,7 +29,7 @@ public class GymScenarioTest extends BaseTest{
 	
 	
 	@SuppressWarnings({ "rawtypes", "static-access" })
-	@Test(priority = 11)
+	@Test(priority = 13)
 	public void gymAndFitness() {
 		
 		System.out.println("Inside Gym and Fitness Scenario Test");

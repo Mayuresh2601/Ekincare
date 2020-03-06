@@ -7,7 +7,7 @@
 	</listeners>
 	
 	<test name = "Ekincare_Apk_Test">
-	
+		
 		<classes>
 			<class name="com.ekincare.androidautomation.HomeTest" />
 			<class name="com.ekincare.androidautomation.benefits.GymScenarioTest" />

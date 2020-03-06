@@ -65,10 +65,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			driver.findElement(By.id("com.ekincare.development:id/view_payment_details")).click();
 			Thread.sleep(1000);
 			
-			actualResult = driver.currentActivity();
-			expectedResult = "com.ekincare.familydoctorflow.views.ScheduleDoctorConsultCreateActivity";
-			assertEquals(actualResult, expectedResult);
-			
 		} catch (Exception e) {
 			
 			System.out.println("Cause  is: " + e.getCause());
@@ -460,7 +456,6 @@ public class TalkWithFamilyDoctorTest extends BaseTest{
 			.perform();
 			
 			List<MobileElement> icons = driver.findElements(By.id("com.ekincare.development:id/customer_logo_icons"));
-			System.out.println(icons.size());
 
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ScrollView/android.widget.RelativeLayout/android.widget.LinearLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout["+ icons.size() + "]/android.widget.FrameLayout/android.widget.ImageView")).click();
 			Thread.sleep(1000);

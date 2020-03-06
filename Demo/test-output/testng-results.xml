@@ -2,16 +2,16 @@
 <testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9162" started-at="2020-03-03T12:36:00Z" finished-at="2020-03-03T12:36:09Z">
+  <suite name="Default suite" duration-ms="9412" started-at="2020-03-06T09:19:58Z" finished-at="2020-03-06T09:20:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9162" started-at="2020-03-03T12:36:00Z" finished-at="2020-03-03T12:36:09Z">
+    <test name="Default test" duration-ms="9412" started-at="2020-03-06T09:19:58Z" finished-at="2020-03-06T09:20:07Z">
       <class name="com.ekincare.demo.LoginTest">
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="startTest" is-config="true" duration-ms="3697" started-at="2020-03-03T12:36:00Z" finished-at="2020-03-03T12:36:04Z">
+        <test-method status="PASS" signature="startTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="startTest" is-config="true" duration-ms="3971" started-at="2020-03-06T09:19:58Z" finished-at="2020-03-06T09:20:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="login" duration-ms="9" started-at="2020-03-03T12:36:04Z" data-provider="login" finished-at="2020-03-03T12:36:04Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="login" duration-ms="7" started-at="2020-03-06T09:20:02Z" data-provider="loginData" finished-at="2020-03-06T09:20:02Z">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy10.sendKeys(Unknown Source)
 at com.ekincare.demo.pages.LoginPage.login(LoginPage.java:31)
-at com.ekincare.demo.LoginTest.login(LoginTest.java:51)
+at com.ekincare.demo.LoginTest.login(LoginTest.java:52)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -63,11 +63,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="endTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="endTest" is-config="true" duration-ms="5000" started-at="2020-03-03T12:36:04Z" finished-at="2020-03-03T12:36:09Z">
+        <test-method status="FAIL" signature="endTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="endTest" is-config="true" duration-ms="5000" started-at="2020-03-06T09:20:02Z" finished-at="2020-03-06T09:20:07Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.ekincare.demo.LoginTest.endTest(LoginTest.java:59)
+at com.ekincare.demo.LoginTest.endTest(LoginTest.java:60)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,15 +102,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="startTest" is-config="true" duration-ms="0" started-at="2020-03-03T12:36:09Z" finished-at="2020-03-03T12:36:09Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="startTest" is-config="true" duration-ms="0" started-at="2020-03-06T09:20:07Z" finished-at="2020-03-06T09:20:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="SKIP" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="login" duration-ms="0" started-at="2020-03-03T12:36:09Z" data-provider="login" finished-at="2020-03-03T12:36:09Z">
+        <test-method status="SKIP" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="login" duration-ms="0" started-at="2020-03-06T09:20:07Z" data-provider="loginData" finished-at="2020-03-06T09:20:07Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.ekincare.demo.LoginTest.endTest(LoginTest.java:59)
+at com.ekincare.demo.LoginTest.endTest(LoginTest.java:60)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,19 +145,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="endTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="endTest" is-config="true" duration-ms="0" started-at="2020-03-03T12:36:09Z" finished-at="2020-03-03T12:36:09Z">
+        <test-method status="SKIP" signature="endTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="endTest" is-config="true" duration-ms="0" started-at="2020-03-06T09:20:07Z" finished-at="2020-03-06T09:20:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="startTest" is-config="true" duration-ms="0" started-at="2020-03-03T12:36:09Z" finished-at="2020-03-03T12:36:09Z">
+        <test-method status="SKIP" signature="startTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="startTest" is-config="true" duration-ms="0" started-at="2020-03-06T09:20:07Z" finished-at="2020-03-06T09:20:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method status="SKIP" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="login" duration-ms="0" started-at="2020-03-03T12:36:09Z" data-provider="login" finished-at="2020-03-03T12:36:09Z">
+        <test-method status="SKIP" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="login" duration-ms="0" started-at="2020-03-06T09:20:07Z" data-provider="loginData" finished-at="2020-03-06T09:20:07Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.ekincare.demo.LoginTest.endTest(LoginTest.java:59)
+at com.ekincare.demo.LoginTest.endTest(LoginTest.java:60)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -192,7 +192,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="endTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="endTest" is-config="true" duration-ms="0" started-at="2020-03-03T12:36:09Z" finished-at="2020-03-03T12:36:09Z">
+        <test-method status="SKIP" signature="endTest()[pri:0, instance:com.ekincare.demo.LoginTest@a7e666]" name="endTest" is-config="true" duration-ms="0" started-at="2020-03-06T09:20:07Z" finished-at="2020-03-06T09:20:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
