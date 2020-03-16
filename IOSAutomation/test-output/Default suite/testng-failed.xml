@@ -6,6 +6,8 @@
       <class name="com.ekincare.RealDevice">
         <methods>
           <include name="beginTest"/>
+          <include name="realDevice"/>
+          <include name="endTest"/>
         </methods>
       </class> <!-- com.ekincare.RealDevice -->
     </classes>

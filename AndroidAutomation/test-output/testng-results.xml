@@ -1,169 +1,289 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+<testng-results skipped="0" failed="0" ignored="0" total="23" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="543029" started-at="2020-03-06T10:45:43Z" finished-at="2020-03-06T10:54:46Z">
+  <suite name="Default suite" duration-ms="1183670" started-at="2020-03-13T12:01:46Z" finished-at="2020-03-13T12:21:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="543029" started-at="2020-03-06T10:45:43Z" finished-at="2020-03-06T10:54:46Z">
-      <class name="com.ekincare.androidautomation.HomeTest">
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="8097" started-at="2020-03-06T10:45:43Z" finished-at="2020-03-06T10:45:51Z">
+    <test name="Default test" duration-ms="1183670" started-at="2020-03-13T12:01:46Z" finished-at="2020-03-13T12:21:30Z">
+      <class name="com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8852" started-at="2020-03-13T12:01:46Z" finished-at="2020-03-13T12:01:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="gymAndFitness()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="gymAndFitness" duration-ms="32967" started-at="2020-03-06T10:45:51Z" finished-at="2020-03-06T10:46:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gymAndFitness -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4493" started-at="2020-03-06T10:46:24Z" finished-at="2020-03-06T10:46:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="7888" started-at="2020-03-06T10:46:29Z" finished-at="2020-03-06T10:46:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="medicineNameWithoutAddressSelf()[pri:1, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="medicineNameWithoutAddressSelf" duration-ms="39195" started-at="2020-03-06T10:46:37Z" finished-at="2020-03-06T10:47:16Z">
+        <test-method status="PASS" signature="medicineNameWithoutAddressSelf()[pri:17, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="medicineNameWithoutAddressSelf" duration-ms="42884" started-at="2020-03-13T12:01:55Z" finished-at="2020-03-13T12:02:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- medicineNameWithoutAddressSelf -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4485" started-at="2020-03-06T10:47:16Z" finished-at="2020-03-06T10:47:20Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4490" started-at="2020-03-13T12:02:38Z" finished-at="2020-03-13T12:02:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="6609" started-at="2020-03-06T10:47:20Z" finished-at="2020-03-06T10:47:27Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="7503" started-at="2020-03-13T12:02:43Z" finished-at="2020-03-13T12:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="medicineNameDeleteAddressSelf()[pri:2, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="medicineNameDeleteAddressSelf" duration-ms="33230" started-at="2020-03-06T10:47:27Z" finished-at="2020-03-06T10:48:00Z">
+        <test-method status="PASS" signature="medicineNameWithAddressSelf()[pri:18, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="medicineNameWithAddressSelf" duration-ms="36192" started-at="2020-03-13T12:02:50Z" finished-at="2020-03-13T12:03:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medicineNameWithAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4797" started-at="2020-03-13T12:03:26Z" finished-at="2020-03-13T12:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="7415" started-at="2020-03-13T12:03:31Z" finished-at="2020-03-13T12:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="medicineNameChangeAddressSelf()[pri:19, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="medicineNameChangeAddressSelf" duration-ms="45531" started-at="2020-03-13T12:03:39Z" finished-at="2020-03-13T12:04:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medicineNameChangeAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4531" started-at="2020-03-13T12:04:24Z" finished-at="2020-03-13T12:04:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8084" started-at="2020-03-13T12:04:29Z" finished-at="2020-03-13T12:04:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="medicineNameDeleteAddressPlusAddAddressSelf()[pri:20, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="medicineNameDeleteAddressPlusAddAddressSelf" duration-ms="49698" started-at="2020-03-13T12:04:37Z" finished-at="2020-03-13T12:05:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medicineNameDeleteAddressPlusAddAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="5098" started-at="2020-03-13T12:05:26Z" finished-at="2020-03-13T12:05:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="7351" started-at="2020-03-13T12:05:31Z" finished-at="2020-03-13T12:05:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="medicineNameDeleteAddressSelf()[pri:21, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="medicineNameDeleteAddressSelf" duration-ms="35627" started-at="2020-03-13T12:05:39Z" finished-at="2020-03-13T12:06:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- medicineNameDeleteAddressSelf -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4522" started-at="2020-03-06T10:48:00Z" finished-at="2020-03-06T10:48:05Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4448" started-at="2020-03-13T12:06:14Z" finished-at="2020-03-13T12:06:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="8051" started-at="2020-03-06T10:48:05Z" finished-at="2020-03-06T10:48:13Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="7032" started-at="2020-03-13T12:06:19Z" finished-at="2020-03-13T12:06:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="healthCheckupSelf()[pri:3, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="healthCheckupSelf" duration-ms="51101" started-at="2020-03-06T10:48:13Z" finished-at="2020-03-06T10:49:04Z">
+        <test-method status="PASS" signature="pastUploadedWithoutAddressSelf()[pri:22, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedWithoutAddressSelf" duration-ms="47414" started-at="2020-03-13T12:06:26Z" finished-at="2020-03-13T12:07:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- healthCheckupSelf -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4557" started-at="2020-03-06T10:49:04Z" finished-at="2020-03-06T10:49:08Z">
+        </test-method> <!-- pastUploadedWithoutAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4465" started-at="2020-03-13T12:07:13Z" finished-at="2020-03-13T12:07:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="7720" started-at="2020-03-06T10:49:08Z" finished-at="2020-03-06T10:49:16Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="7859" started-at="2020-03-13T12:07:18Z" finished-at="2020-03-13T12:07:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="healthCheckupFamilyMember()[pri:4, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="healthCheckupFamilyMember" duration-ms="49357" started-at="2020-03-06T10:49:16Z" finished-at="2020-03-06T10:50:05Z">
+        <test-method status="PASS" signature="pastUploadedWithAddressSelf()[pri:23, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedWithAddressSelf" duration-ms="41124" started-at="2020-03-13T12:07:26Z" finished-at="2020-03-13T12:08:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- healthCheckupFamilyMember -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4638" started-at="2020-03-06T10:50:05Z" finished-at="2020-03-06T10:50:10Z">
+        </test-method> <!-- pastUploadedWithAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4579" started-at="2020-03-13T12:08:07Z" finished-at="2020-03-13T12:08:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="9699" started-at="2020-03-06T10:50:10Z" finished-at="2020-03-06T10:50:20Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8205" started-at="2020-03-13T12:08:11Z" finished-at="2020-03-13T12:08:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="scheduleAppointment()[pri:5, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="scheduleAppointment" duration-ms="30346" started-at="2020-03-06T10:50:20Z" finished-at="2020-03-06T10:50:50Z">
+        <test-method status="PASS" signature="pastUploadedChangeAddressSelf()[pri:24, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedChangeAddressSelf" duration-ms="49896" started-at="2020-03-13T12:08:20Z" finished-at="2020-03-13T12:09:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scheduleAppointment -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4582" started-at="2020-03-06T10:50:50Z" finished-at="2020-03-06T10:50:55Z">
+        </test-method> <!-- pastUploadedChangeAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4495" started-at="2020-03-13T12:09:09Z" finished-at="2020-03-13T12:09:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="7871" started-at="2020-03-06T10:50:55Z" finished-at="2020-03-06T10:51:03Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8023" started-at="2020-03-13T12:09:14Z" finished-at="2020-03-13T12:09:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="talkWithDoctorSelf()[pri:6, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="talkWithDoctorSelf" duration-ms="31480" started-at="2020-03-06T10:51:03Z" finished-at="2020-03-06T10:51:34Z">
+        <test-method status="PASS" signature="pastUploadedDeleteAddressPlusAddAddressSelf()[pri:25, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedDeleteAddressPlusAddAddressSelf" duration-ms="46137" started-at="2020-03-13T12:09:22Z" finished-at="2020-03-13T12:10:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- talkWithDoctorSelf -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4512" started-at="2020-03-06T10:51:34Z" finished-at="2020-03-06T10:51:39Z">
+        </test-method> <!-- pastUploadedDeleteAddressPlusAddAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4490" started-at="2020-03-13T12:10:08Z" finished-at="2020-03-13T12:10:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="7833" started-at="2020-03-06T10:51:39Z" finished-at="2020-03-06T10:51:46Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8197" started-at="2020-03-13T12:10:13Z" finished-at="2020-03-13T12:10:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="viewAll()[pri:7, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="viewAll" duration-ms="19274" started-at="2020-03-06T10:51:46Z" finished-at="2020-03-06T10:52:06Z">
+        <test-method status="PASS" signature="pastUploadedDeleteAddressSelf()[pri:26, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedDeleteAddressSelf" duration-ms="34520" started-at="2020-03-13T12:10:21Z" finished-at="2020-03-13T12:10:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewAll -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4503" started-at="2020-03-06T10:52:06Z" finished-at="2020-03-06T10:52:10Z">
+        </test-method> <!-- pastUploadedDeleteAddressSelf -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4495" started-at="2020-03-13T12:10:55Z" finished-at="2020-03-13T12:11:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="7841" started-at="2020-03-06T10:52:10Z" finished-at="2020-03-06T10:52:18Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8509" started-at="2020-03-13T12:11:00Z" finished-at="2020-03-13T12:11:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="home()[pri:8, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="home" duration-ms="17783" started-at="2020-03-06T10:52:18Z" finished-at="2020-03-06T10:52:36Z">
+        <test-method status="PASS" signature="pastUploadedWithoutAddressFamily()[pri:27, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedWithoutAddressFamily" duration-ms="36108" started-at="2020-03-13T12:11:08Z" finished-at="2020-03-13T12:11:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- home -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4548" started-at="2020-03-06T10:52:36Z" finished-at="2020-03-06T10:52:40Z">
+        </test-method> <!-- pastUploadedWithoutAddressFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4515" started-at="2020-03-13T12:11:44Z" finished-at="2020-03-13T12:11:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="8049" started-at="2020-03-06T10:52:40Z" finished-at="2020-03-06T10:52:48Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8211" started-at="2020-03-13T12:11:49Z" finished-at="2020-03-13T12:11:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="health()[pri:9, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="health" duration-ms="18695" started-at="2020-03-06T10:52:48Z" finished-at="2020-03-06T10:53:07Z">
+        <test-method status="PASS" signature="pastUploadedWithAddressFamily()[pri:28, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedWithAddressFamily" duration-ms="28667" started-at="2020-03-13T12:11:57Z" finished-at="2020-03-13T12:12:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- health -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4543" started-at="2020-03-06T10:53:07Z" finished-at="2020-03-06T10:53:12Z">
+        </test-method> <!-- pastUploadedWithAddressFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4504" started-at="2020-03-13T12:12:26Z" finished-at="2020-03-13T12:12:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="8012" started-at="2020-03-06T10:53:12Z" finished-at="2020-03-06T10:53:20Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8196" started-at="2020-03-13T12:12:30Z" finished-at="2020-03-13T12:12:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="benefits()[pri:10, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="benefits" duration-ms="19125" started-at="2020-03-06T10:53:20Z" finished-at="2020-03-06T10:53:39Z">
+        <test-method status="PASS" signature="pastUploadedChangeAddressFamily()[pri:29, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedChangeAddressFamily" duration-ms="39772" started-at="2020-03-13T12:12:39Z" finished-at="2020-03-13T12:13:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- benefits -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4499" started-at="2020-03-06T10:53:39Z" finished-at="2020-03-06T10:53:43Z">
+        </test-method> <!-- pastUploadedChangeAddressFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4449" started-at="2020-03-13T12:13:18Z" finished-at="2020-03-13T12:13:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="7896" started-at="2020-03-06T10:53:43Z" finished-at="2020-03-06T10:53:51Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="6910" started-at="2020-03-13T12:13:23Z" finished-at="2020-03-13T12:13:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="improve()[pri:11, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="improve" duration-ms="19329" started-at="2020-03-06T10:53:51Z" finished-at="2020-03-06T10:54:10Z">
+        <test-method status="PASS" signature="pastUploadedDeleteAddressPlusAddAddressFamily()[pri:30, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedDeleteAddressPlusAddAddressFamily" duration-ms="43246" started-at="2020-03-13T12:13:30Z" finished-at="2020-03-13T12:14:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- improve -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4499" started-at="2020-03-06T10:54:10Z" finished-at="2020-03-06T10:54:15Z">
+        </test-method> <!-- pastUploadedDeleteAddressPlusAddAddressFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4494" started-at="2020-03-13T12:14:13Z" finished-at="2020-03-13T12:14:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="beginTest" is-config="true" duration-ms="8300" started-at="2020-03-06T10:54:15Z" finished-at="2020-03-06T10:54:23Z">
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8104" started-at="2020-03-13T12:14:17Z" finished-at="2020-03-13T12:14:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beginTest -->
-        <test-method status="PASS" signature="notifications()[pri:12, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="notifications" duration-ms="18314" started-at="2020-03-06T10:54:23Z" finished-at="2020-03-06T10:54:42Z">
+        <test-method status="PASS" signature="pastUploadedDeleteAddressFamily()[pri:31, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedDeleteAddressFamily" duration-ms="28826" started-at="2020-03-13T12:14:26Z" finished-at="2020-03-13T12:14:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- notifications -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.HomeTest@627551fb]" name="endTest" is-config="true" duration-ms="4542" started-at="2020-03-06T10:54:42Z" finished-at="2020-03-06T10:54:46Z">
+        </test-method> <!-- pastUploadedDeleteAddressFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4466" started-at="2020-03-13T12:14:54Z" finished-at="2020-03-13T12:14:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-      </class> <!-- com.ekincare.androidautomation.HomeTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8013" started-at="2020-03-13T12:14:59Z" finished-at="2020-03-13T12:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="pastUploadedWithoutAddressSelfPlusFamily()[pri:32, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedWithoutAddressSelfPlusFamily" duration-ms="41512" started-at="2020-03-13T12:15:07Z" finished-at="2020-03-13T12:15:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pastUploadedWithoutAddressSelfPlusFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4479" started-at="2020-03-13T12:15:48Z" finished-at="2020-03-13T12:15:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8003" started-at="2020-03-13T12:15:53Z" finished-at="2020-03-13T12:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="pastUploadedWithAddressSelfPlusFamily()[pri:33, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedWithAddressSelfPlusFamily" duration-ms="33415" started-at="2020-03-13T12:16:01Z" finished-at="2020-03-13T12:16:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pastUploadedWithAddressSelfPlusFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4503" started-at="2020-03-13T12:16:34Z" finished-at="2020-03-13T12:16:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="7350" started-at="2020-03-13T12:16:39Z" finished-at="2020-03-13T12:16:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="pastUploadedDeleteAddressPlusAddAddressSelfPlusFamily()[pri:34, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedDeleteAddressPlusAddAddressSelfPlusFamily" duration-ms="49531" started-at="2020-03-13T12:16:46Z" finished-at="2020-03-13T12:17:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pastUploadedDeleteAddressPlusAddAddressSelfPlusFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4519" started-at="2020-03-13T12:17:36Z" finished-at="2020-03-13T12:17:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8237" started-at="2020-03-13T12:17:40Z" finished-at="2020-03-13T12:17:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="pastUploadedDeleteAddressSelfPlusFamily()[pri:35, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="pastUploadedDeleteAddressSelfPlusFamily" duration-ms="35964" started-at="2020-03-13T12:17:48Z" finished-at="2020-03-13T12:18:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pastUploadedDeleteAddressSelfPlusFamily -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4499" started-at="2020-03-13T12:18:24Z" finished-at="2020-03-13T12:18:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="6832" started-at="2020-03-13T12:18:29Z" finished-at="2020-03-13T12:18:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="fromGalleryWithoutAddress()[pri:36, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="fromGalleryWithoutAddress" duration-ms="33751" started-at="2020-03-13T12:18:36Z" finished-at="2020-03-13T12:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromGalleryWithoutAddress -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4492" started-at="2020-03-13T12:19:09Z" finished-at="2020-03-13T12:19:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="7059" started-at="2020-03-13T12:19:14Z" finished-at="2020-03-13T12:19:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="fromGalleryWithAddress()[pri:37, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="fromGalleryWithAddress" duration-ms="28808" started-at="2020-03-13T12:19:21Z" finished-at="2020-03-13T12:19:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromGalleryWithAddress -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4464" started-at="2020-03-13T12:19:50Z" finished-at="2020-03-13T12:19:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8278" started-at="2020-03-13T12:19:54Z" finished-at="2020-03-13T12:20:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="fromGalleryDeleteAddressPlusAddAddress()[pri:38, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="fromGalleryDeleteAddressPlusAddAddress" duration-ms="40845" started-at="2020-03-13T12:20:03Z" finished-at="2020-03-13T12:20:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromGalleryDeleteAddressPlusAddAddress -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4444" started-at="2020-03-13T12:20:43Z" finished-at="2020-03-13T12:20:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="beginTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="beginTest" is-config="true" duration-ms="8132" started-at="2020-03-13T12:20:48Z" finished-at="2020-03-13T12:20:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beginTest -->
+        <test-method status="PASS" signature="fromGalleryDeleteAddress()[pri:39, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="fromGalleryDeleteAddress" duration-ms="29496" started-at="2020-03-13T12:20:56Z" finished-at="2020-03-13T12:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromGalleryDeleteAddress -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest@627551fb]" name="endTest" is-config="true" duration-ms="4585" started-at="2020-03-13T12:21:25Z" finished-at="2020-03-13T12:21:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

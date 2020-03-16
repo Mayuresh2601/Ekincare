@@ -107,7 +107,7 @@ public class TalkWithDoctorTest extends BaseTest{
 	}
 	
 	@SuppressWarnings({ "static-access" })
-	@Test(priority = 42)
+//	@Test(priority = 42)
 	public void talkWithDoctorAddFamily() {
 		
 		System.out.println("Inside Talk with Doctor Scenario to Add Family Member Test");
@@ -155,6 +155,7 @@ public class TalkWithDoctorTest extends BaseTest{
 			Thread.sleep(1000);
 			
 			driver.findElement(By.id("com.ekincare.development:id/add_member")).click();
+			Thread.sleep(1000);
 			
 			driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]")).click();
 			Thread.sleep(1000);

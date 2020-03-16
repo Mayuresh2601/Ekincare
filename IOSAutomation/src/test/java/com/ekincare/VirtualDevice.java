@@ -5,6 +5,8 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileElement;
@@ -12,7 +14,7 @@ import io.appium.java_client.ios.IOSDriver;
 
 public class VirtualDevice extends BaseTest{
 	
-	@Test
+	@BeforeTest
 	public void beginTest() throws MalformedURLException {
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -27,5 +29,18 @@ public class VirtualDevice extends BaseTest{
 		
 		driver = new IOSDriver<MobileElement>(url, cap);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+	
+	@Test
+	public void realDevice() {
+		
+		System.out.println("Inside Test Method");
+	}
+	
+	@AfterTest
+	public void endTest() throws InterruptedException {
+		
+		Thread.sleep(5000);
+		driver.close();
 	}
 }

@@ -8,36 +8,6 @@ import io.appium.java_client.MobileElement;
 
 public class LoginPage extends BaseTest{
 	
-//	@FindBy(id = "com.ekincare.development:id/skipButton")
-//	WebElement skip;
-//	
-//	@FindBy(id = "com.ekincare.development:id/get_started_Button")
-//	WebElement getStarted;
-//	
-//	@FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout")
-//	WebElement corporateEmp;
-//	
-//	@FindBy(id = "com.ekincare.development:id/edit_text_email_check")
-//	WebElement email;
-//	
-//	@FindBy(id = "com.ekincare.development:id/register_next_view")
-//	WebElement nextBtn;
-//	
-//	@FindBy(id = "com.ekincare.development:id/password_set")
-//	WebElement password;
-//	
-//	@FindBy(id = "com.ekincare.development:id/otp_next_view")
-//	WebElement nextBTN;
-//	
-//	@FindBy(id = "com.ekincare.development:id/tv_dismiss")
-//	WebElement dismiss;
-	
-	
-//	public LoginPage() {
-//		
-//		PageFactory.initElements(driver, this);
-//	}
-	
 
 	public void talkWithFamilyCredentials() {
 		
@@ -59,7 +29,7 @@ public class LoginPage extends BaseTest{
 			Thread.sleep(1000);
 			
 			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
+			password.sendKeys("ekincare1234567");
 			Thread.sleep(1000);
 			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
 			nextBTN.click();
@@ -94,7 +64,7 @@ public class LoginPage extends BaseTest{
 			Thread.sleep(1000);
 			
 			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123");
+			password.sendKeys("ekincare12345");
 			Thread.sleep(1000);
 			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
 			nextBTN.click();

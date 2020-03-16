@@ -15,6 +15,8 @@
 			<class name="com.ekincare.androidautomation.benefits.OrderMedicinesScenarioTest" />
 			<class name="com.ekincare.androidautomation.benefits.TalkWithDoctorTest" />
 			<class name="com.ekincare.androidautomation.benefits.TalkWithFamilyDoctorTest" />
+			<class name="com.ekincare.androidautomation.benefits.DentalCheckupTest" />
+			<class name="com.ekincare.androidautomation.benefits.VisionCheckupTest" />
 			<class name="com.ekincare.androidautomation.health.MedicalReportsTest" />
 			<class name="com.ekincare.androidautomation.health.InsightsTest" />
 			<class name="com.ekincare.androidautomation.improve.ChallengesTest" />

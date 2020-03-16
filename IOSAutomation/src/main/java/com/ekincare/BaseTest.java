@@ -1,9 +1,10 @@
 package com.ekincare;
 
-import org.openqa.selenium.WebDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.ios.IOSDriver;
 
 public class BaseTest {
 	
-	WebDriver driver;
+	protected static IOSDriver<MobileElement> driver;
 
 }

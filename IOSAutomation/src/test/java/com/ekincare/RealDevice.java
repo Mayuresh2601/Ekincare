@@ -14,20 +14,20 @@ import io.appium.java_client.ios.IOSDriver;
 
 public class RealDevice extends BaseTest {
 	
-	@Test
+	@BeforeTest
 	public void beginTest() throws MalformedURLException {
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability("deviceName", "iPhone 11");
-		cap.setCapability("platformName", "iOS");
-		cap.setCapability("platformVersion", "13.2");
-		cap.setCapability("UDID", "00008030-000965323C92802E");
-		cap.setCapability("app", "/Users/ekincare/Desktop/ekincare.app");
 		
-		cap.setCapability("xcodeSigningId", "iPhone Developer");
-		cap.setCapability("updateWDABundleId", "com.mayuresh123.WebDriverAgentRunner");
-		cap.setCapability("noReset", true);
+		cap.setCapability("platformName", "iOS");
+		cap.setCapability("platformVersion", "13.3");
+		cap.setCapability("deviceName", "Ekincare");
+		cap.setCapability("bundleId", "com.adroitent.Ekincare");
+		cap.setCapability("udid", "00008030-000965323C92802E");
 		cap.setCapability("automationName", "XCUITest");
+//		cap.setCapability("xcodeSigningId", "iPhone Developer");
+//		cap.setCapability("updateWDABundleId", "com.mayuresh123.WebDriverAgentRunner");
+		cap.setCapability("noReset", true);
 		
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		
@@ -35,16 +35,16 @@ public class RealDevice extends BaseTest {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
-//	@Test
-//	public void realDevice() {
-//		
-//		
-//	}
-//	
-//	@AfterTest
-//	public void endTest() {
-//		
-//		
-//	}
-
+	@Test
+	public void realDevice() {
+		
+		System.out.println("Inside Test Method");
+	}
+	
+	@AfterTest
+	public void endTest() throws InterruptedException {
+		
+		Thread.sleep(5000);
+		driver.close();
+	}
 }
