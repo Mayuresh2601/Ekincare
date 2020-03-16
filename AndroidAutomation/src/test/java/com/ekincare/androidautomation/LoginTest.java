@@ -2,7 +2,10 @@ package com.ekincare.androidautomation;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -11,6 +14,8 @@ import org.testng.annotations.Test;
 import com.ekincare.androidautomation.utility.CustomListner;
 
 import io.appium.java_client.MobileElement;
+import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.util.LoadLibs;
 
 @Listeners(CustomListner.class)
 public class LoginTest extends BaseTest{
@@ -58,22 +63,33 @@ public class LoginTest extends BaseTest{
 			corporateEmp.click();
 			Thread.sleep(1000);
 			MobileElement email = driver.findElement(By.id("com.ekincare.development:id/edit_text_email_check"));
-			email.sendKeys("testfeb24920@yopmail.com");
+			email.sendKeys("testfeb24320@yopmail.com");
 			Thread.sleep(1000);
 			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
 			nextBtn.click();
 			Thread.sleep(1000);
 			
 			MobileElement password = driver.findElement(By.id("com.ekincare.development:id/password_set"));
-			password.sendKeys("ekincare123456");
+			password.sendKeys("ekincare");
 			Thread.sleep(1000);
 			MobileElement nextBTN = driver.findElement(By.id("com.ekincare.development:id/otp_next_view"));
 			nextBTN.click();
-		
-			System.out.println("Reading Image");
-			String imageText = utility.readImage();
-			
-			System.out.println("Image content is: "+imageText);
+	
+			Thread.sleep(500);
+			String screenShot = utility.getScreenShots();
+			File imageFile = utility.readImage(screenShot);
+			 
+	        // get the Tesseract direct interace
+	        Tesseract instance = new Tesseract();
+	        File tessDataFolder = LoadLibs.extractTessResources("tessdata"); // Extracts
+			instance.setDatapath(tessDataFolder.getAbsolutePath()); // sets tessData
+	 
+	        // the doOCR method of Tesseract will retrive the text
+	        // from image captured by Selenium
+	        String result = instance.doOCR(imageFile);
+	        
+	        // check the the result
+	        Assert.assertTrue(result.contains("Invalid Credentials"));
 			
 			
 		} catch (Exception e) {
@@ -83,6 +99,7 @@ public class LoginTest extends BaseTest{
 		}
 	}
 	
+	@SuppressWarnings("static-access")
 	@Test(priority = 1)
 	public void invalidUsernameValidPasswordTest() {
 		
@@ -102,6 +119,22 @@ public class LoginTest extends BaseTest{
 			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
 			nextBtn.click();
 			
+			Thread.sleep(500);
+			String screenShot = utility.getScreenShots();
+			File imageFile = utility.readImage(screenShot);
+			 
+	        // get the Tesseract direct interace
+	        Tesseract instance = new Tesseract();
+	        File tessDataFolder = LoadLibs.extractTessResources("tessdata"); // Extracts
+			instance.setDatapath(tessDataFolder.getAbsolutePath()); // sets tessData
+	 
+	        // the doOCR method of Tesseract will retrive the text
+	        // from image captured by Selenium
+	        String result = instance.doOCR(imageFile);
+	        
+	        // check the the result
+	        Assert.assertTrue(result.contains("Enter your company code"));
+			
 		} catch (Exception e) {
 			System.out.println("Cause  is: " + e.getCause());
 			System.out.println("Message is: " + e.getMessage());
@@ -110,6 +143,7 @@ public class LoginTest extends BaseTest{
 	}
 	
 	@Test(priority = 2)
+	@SuppressWarnings("static-access")
 	public void invalidUsernameInvalidPasswordTest() {
 		
 		try {
@@ -127,7 +161,22 @@ public class LoginTest extends BaseTest{
 			Thread.sleep(1000);
 			MobileElement nextBtn = driver.findElement(By.id("com.ekincare.development:id/register_next_view"));
 			nextBtn.click();
-			Thread.sleep(1000);
+			
+			Thread.sleep(500);
+			String screenShot = utility.getScreenShots();
+			File imageFile = utility.readImage(screenShot);
+			 
+	        // get the Tesseract direct interace
+	        Tesseract instance = new Tesseract();
+	        File tessDataFolder = LoadLibs.extractTessResources("tessdata"); // Extracts
+			instance.setDatapath(tessDataFolder.getAbsolutePath()); // sets tessData
+	 
+	        // the doOCR method of Tesseract will retrive the text
+	        // from image captured by Selenium
+	        String result = instance.doOCR(imageFile);
+	        
+	        // check the the result
+	        Assert.assertTrue(result.contains("Enter your company code"));
 			
 		} catch (Exception e) {
 			System.out.println("Cause  is: " + e.getCause());

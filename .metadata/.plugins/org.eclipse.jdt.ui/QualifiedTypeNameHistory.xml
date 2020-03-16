@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.apache.commons.math3.stat.inference.TestUtils"/>
-<fullyQualifiedTypeName name="com.ekincare.androidautomation.utility.Utility"/>
-<fullyQualifiedTypeName name="java.awt.Robot"/>
-<fullyQualifiedTypeName name="io.appium.java_client.pagefactory.AndroidFindBy"/>
-<fullyQualifiedTypeName name="io.appium.java_client.MobileCommand"/>
-<fullyQualifiedTypeName name="io.appium.java_client.MobileDriver"/>
-<fullyQualifiedTypeName name="io.appium.java_client.TouchAction"/>
-<fullyQualifiedTypeName name="io.appium.java_client.touch.LongPressOptions"/>
-<fullyQualifiedTypeName name="io.appium.java_client.touch.offset.ElementOption"/>
 <fullyQualifiedTypeName name="com.sun.jna.Structure.FFIType.size_t"/>
 <fullyQualifiedTypeName name="io.appium.java_client.android.AndroidDriver"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
@@ -40,7 +31,6 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
 <fullyQualifiedTypeName name="com.ekincare.demo.utility.TestUtility"/>
 <fullyQualifiedTypeName name="com.ekincare.demo.pages.LoginPage"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
 <fullyQualifiedTypeName name="com.ekincare.androidautomation.pages.LoginPage"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
@@ -49,7 +39,6 @@
 <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.exc.InvalidFormatException"/>
 <fullyQualifiedTypeName name="org.apache.commons.compress.archivers.dump.InvalidFormatException"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="com.ekincare.androidautomation.pages.HomePage"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeSuite"/>
@@ -58,6 +47,17 @@
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeMethod"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.internal.WrapsDriver"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WrapsDriver"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="com.lowagie.text.Rectangle"/>
+<fullyQualifiedTypeName name="com.graphbuilder.curve.Point"/>
+<fullyQualifiedTypeName name="java.awt.Rectangle"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.Point"/>
+<fullyQualifiedTypeName name="net.sourceforge.tess4j.Tesseract"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="io.appium.java_client.MobileElement"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

@@ -1,10 +1,14 @@
 package com.ekincare.androidautomation.utility;
 
+import java.awt.Rectangle;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
+
+import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Dimension;
@@ -20,16 +24,9 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.touch.offset.PointOption;
-import net.sourceforge.tess4j.ITesseract;
-import net.sourceforge.tess4j.Tesseract;
-import net.sourceforge.tess4j.TesseractException;
-import net.sourceforge.tess4j.util.LoadLibs;
 
-public class Utility extends BaseTest{
+public class Utility extends BaseTest {
 	
-	static String ScreenshotFolder = "/FailedScreenshots/";
-	static String screenshotPath = System.getProperty("user.dir") +ScreenshotFolder+ "";
-	static String result = null;
 	
 	@SuppressWarnings("rawtypes")
 	public static void swipeScreen() {
@@ -85,34 +82,30 @@ public class Utility extends BaseTest{
 		return destination;
 	}
 	
-	
-	public static String readImage() throws TesseractException {
-
+	public static File readImage(String screenShot) throws Exception {
+ 
+        File screen = new File(screenShot);
+ 
+        // create an instance of buffered image from captured screenshot
+        BufferedImage img = ImageIO.read(screen);
+ 
+        // get the width and height of the WebElement using getSize()
+        Dimension dim = driver.manage().window().getSize();
+		int height = dim.getHeight();
+		int width = dim.getWidth();
 		
-		try {
-			
-			System.out.println("Taking Screenshot");
-			Thread.sleep(500);
-			String imgPath = getScreenShots();
-			
-			File imageFile = new File(imgPath);
-			System.out.println("Image name is :" + imageFile.toString());
-			ITesseract instance = new Tesseract();
-
-			File tessDataFolder = LoadLibs.extractTessResources("tessdata"); // Extracts
-
-			instance.setDatapath(tessDataFolder.getAbsolutePath()); // sets tessData
-			result = instance.doOCR(imageFile);
-			System.out.println(result);
-			
-		} catch (Exception e) {
-			System.out.println("Cause is: "+e.getCause());
-			System.out.println("Message is: "+e.getMessage());
-			e.printStackTrace();
-		}
-		
-		return result;
-	}
+        // create a rectangle using width and height
+        Rectangle rect = new Rectangle(width, height);
+ 
+        // create image  for element using its location and size.
+        BufferedImage dest = img.getSubimage(0, 0, rect.width, rect.height);
+ 
+        // write back the image data for element in File object
+        ImageIO.write(dest, "png", screen);
+ 
+        // return the File object containing image data
+        return screen;
+    }
 
 	public static void init_Driver() {
 		
@@ -148,6 +141,7 @@ public class Utility extends BaseTest{
 			
 			Thread.sleep(4000);
 			driver.quit();
+			
 		} catch (Exception e) {
 			
 			System.out.println("Causen is: "+e.getCause());
